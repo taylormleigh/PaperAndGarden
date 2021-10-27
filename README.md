@@ -1,76 +1,55 @@
-## Example app using MongoDB
+# Paper & Garden
+## *A World Building Resource for Storytellers*
 
-[MongoDB](https://www.mongodb.com/) is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. This example will show you how to connect to and use MongoDB as your backend for your Next.js app.
+![logo](public/builderlogo.png)
 
-If you want to learn more about MongoDB, visit the following pages:
+### Introduction
+This ongoing personal project is an app for storytellers (novelists, screenwriters, etc.) to assist in world-building. I wanted to use this project as an opportunity to explore features new to me using raw React and CSS rather than utilizing libraries. Paper & Garden is a full-stack web application that takes in input about a fictional world and saves the information to a user's account.
 
-- [MongoDB Atlas](https://mongodb.com/atlas)
-- [MongoDB Documentation](https://docs.mongodb.com/)
+### [Live Demo](http://papergarden.tay-made.com)
 
-## Deploy your own
+### What does the app do?
+* Paper & Garden offers a user-friendly way to develop fictional worlds.
+* It was built for creators to save and expand upon the worlds of their fiction.
+* Users are able to fill out information based on the prompts and reference them during the writing process.
 
-Once you have access to the environment variables you'll need, deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+### Tech stack
+* Language: JavaScript
+* Client: React, CSS, Next.js
+* Server: ~~Express, Node.js~~ changed to be serverless for a Vercel deployment
+* Database: mySQL
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mongodb&project-name=with-mongodb&repository-name=with-mongodb&env=MONGODB_URI&envDescription=Required%20to%20connect%20the%20app%20with%20MongoDB)
+### Challenges
+* I learned how to use React hooks and specifically how to create custom hooks to create a fully-functional form without utilizing a pre-made library.
+* I designed a SQL database that would be scalable with my stretch goals.
+* In December 2020 I had to reasses my database hosting. However, I fully designed a MySQL database to be able to accomodate future functionality.
 
-## How to use
+### Minimum Viable Product:
+* ~~User can submit data and retrieve that data~~ (temporarily null as of December 2020)
+* Front end is accessible and responsive
+* Back end is set up for future scalability
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+  ![HomePic](screenshots/homePic.png)
+  ![FormGif](screenshots/gifForms.gif)
+  ![ListGif](screenshots/gifWorldList.gif)
 
-```bash
-npx create-next-app --example with-mongodb with-mongodb-app
-# or
-yarn create next-app --example with-mongodb with-mongodb-app
-```
+### How does the app work?
+* When the user logs in, the information is validated via axios get request.
+* When the user creates a new login, an axios post request sends the data through an Express/NodeJS server to a mySQL database, which only takes unique entries for usernames. If the username they desire already exists, it will send back an error to the client.
+* When the user fills out a form, the information is saved in state via a custom React hook. 
+* When the user submits a form, the information about the world they create is saved to a mySQL database.
 
-## Configuration
+### Required Research
+* Though the original project was to accomplish the MVP of the concept, I will be using a Feature Branch Workflow as it evolves.
+* I implement Agile Practices to organize and execute this project.
 
-### Set up a MongoDB database
-
-Set up a MongoDB database either locally or with [MongoDB Atlas for free](https://mongodb.com/atlas).
-
-### Set up environment variables
-
-Copy the `env.local.example` file in this directory to `.env.local` (which will be ignored by Git):
-
-```bash
-cp .env.local.example .env.local
-```
-
-Set each variable on `.env.local`:
-
-- `MONGODB_URI` - Your MongoDB connection string. If you are using [MongoDB Atlas](https://mongodb.com/atlas) you can find this by clicking the "Connect" button for your cluster.
-
-### Run Next.js in development mode
-
-```bash
-npm install
-npm run dev
-
-# or
-
-yarn install
-yarn dev
-```
-
-Your app should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
-
-You will either see a message stating "You are connected to MongoDB" or "You are NOT connected to MongoDB". Ensure that you have provided the correct `MONGODB_URI` environment variable.
-
-When you are successfully connected, you can refer to the [MongoDB Node.js Driver docs](https://mongodb.github.io/node-mongodb-native/3.4/tutorials/collections/) for further instructions on how to query your database.
-
-## Deploy on Vercel
-
-You can deploy this app to the cloud with [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-#### Deploy Your Local Project
-
-To deploy your local project to Vercel, push it to GitHub/GitLab/Bitbucket and [import to Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example).
-
-**Important**: When you import your project on Vercel, make sure to click on **Environment Variables** and set them to match your `.env.local` file.
-
-#### Deploy from Our Template
-
-Alternatively, you can deploy using our template by clicking on the Deploy button below.
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-mongodb&project-name=with-mongodb&repository-name=with-mongodb&env=MONGODB_URI,MONGODB_DB&envDescription=Required%20to%20connect%20the%20app%20with%20MongoDB)
+### Future Plans
+* Full form functionality with increased usability (accordion drawer designs, etc)
+* Unique user accounts
+* Stress-Testing and prepping for increased traffic as features evolve
+* Sharpening the usability of the interface
+* Users are able to edit their worlds after submission
+* Input pulls in information from a natural resources API and auto-fills flora, fauna, weather information, etc.
+* Users are able to share their worlds, to editors, background artists, illustrators, DMs, etc.
+* Sister apps for character development and plot development that integrate with the world storytellers have created
+* And much more!
