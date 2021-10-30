@@ -161,6 +161,25 @@ top: 0px;
   text-transform: uppercase;
 }
 
+.buttonHoverText {
+  display: none;
+
+  position: absolute;
+  /* left: 13.18%; */
+  right: 80%;
+  top: 217.75%;
+  bottom: -293.36%;
+
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
 #linktreeButton {
   position: absolute;
   left: 0%;
@@ -174,8 +193,12 @@ top: 0px;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-#linktreeButton:hover {
-  
+#linktreeButton:hover .buttonHoverText {
+  display: block;
+  /* left: 0%; */
+  /* right: 95.43%; */
+  top: 217.75%;
+  bottom: -293.36%;
 }
 
 #githubButton {
@@ -191,6 +214,10 @@ top: 0px;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+#githubButton:hover .buttonHoverText {
+  display: block;
+}
+
 #tayMadeButton {
   position: absolute;
   left: 47.71%;
@@ -202,7 +229,10 @@ top: 0px;
   color: #F48B7C;
   background: #F48B7C;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
 
+#tayMadeButton:hover .buttonHoverText {
+  display: block;
 }
 
 #linkedInButton {
@@ -218,6 +248,10 @@ top: 0px;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
+#linkedInButton:hover .buttonHoverText {
+  display: block;
+}
+
 #contactButton {
   position: absolute;
   left: 95.43%;
@@ -229,6 +263,10 @@ top: 0px;
   color: #FFB470;
   background: #FFB470;
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+#contactButton:hover .buttonHoverText {
+  display: block;
 }
 
 
