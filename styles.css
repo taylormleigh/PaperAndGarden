@@ -1,27 +1,50 @@
-@import url('https://fonts.googleapis.com/css?family=Rokkitt:200,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital@0;1&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Cormorant+Upright:300&display=swap);
-
-@import url(https://fonts.googleapis.com/css?family=Amatic+SC&display=swap);
-
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+/* body font: Caladea */
+/* heading font: Josefin Sans Light */
 
 body {
-  background-image:  url("public/light_smblur.png");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: top;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: Cormorant Upright;
-  font-weight: 100;
+  background: #FEFDFE;
+  font-family: Caladea;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
-  color: #d7bfff;
-  display: flexbox;
-  align-items: center;
+  line-height: 130%;
   text-align: center;
+  color: #225B4F;
+}
+
+.header {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+}
+
+.navigation {
+  /* position: absolute; */
+  width: 271px;
+  height: 551px;
+}
+
+#navButton {
+  position: absolute;
+  left: 18.08%;
+  right: 14.76%;
+
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%; /* identical to box height, or 23px */
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer {
+
 }
 
 .quote {
@@ -29,70 +52,101 @@ body {
 }
 
 #logo{
-  content: url(public/builderlogo.png);
-  height: 140px;
-  margin-bottom: -10px;
+  content: url(public/logo.png);
   margin: 0 auto;
 }
 
-#header{
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+#bodyDiv {
+  position: absolute;
+  width: 742px;
+  height: 551px;
+  left: 0px;
+  top: 0px;
+
+  background: url(public/light_smblur.png);
+  border: 1px solid #F48B7C;
+  box-sizing: border-box;
+  /* backdrop-filter: blur(4px); */
+  border-radius: 3px;
 }
 
-#footer {
-  font-family: Josefin Sans Light;
-  font-size: 14px;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-}
-
-.container {
-  padding-left: 5%;
-  margin: 0 auto;
-  padding-right: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  border-radius: 5px;
-  max-width: 600px;
-  background-color: rgba(86, 73, 111, 0.726);
-  box-shadow: 25px 25px 50px rgba(37, 27, 73, 0.327);
-  margin-bottom: 10px;
-}
-
+/* page title */
 h1 {
-  font-family:  Josefin Sans Light;
-  font-size: 45px;
-  letter-spacing: -0.2vh;
-  background: linear-gradient(to right, #bd86fcda, #f3eaa8, #a3bedc);
+  text-transform:uppercase;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 50px;
+  line-height: 130%;
+  /* background: radial-gradient(circle at center, #1C4A40, #B0EFC6); */
+  background: -webkit-radial-gradient(#1C4A40, #B0EFC6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
 }
 
+/* sectionTitle */
 h2 {
-  font-family:  Josefin Sans Light;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+
+  text-align: center;
   text-transform: uppercase;
-  font-size: 25px;
-  letter-spacing: -0.2vh;
-  margin-bottom: -10px;
-  background: linear-gradient(to left, #e0755c, #f3eaa8);
+
+  background: -webkit-radial-gradient(#F48B7C, #FFB470);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+/* create new world section title */
 h3 {
-  font-style: italic;
-  font-size: 16px;
-  font-weight: lighter;
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #225B4F;
+}
+
+/* create new world section subtitle */
+h4 {
+  font-family: Josefin Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #225B4F;
+}
+
+/* caption */
+h5 { 
+  font-family: Caladea;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+text-align: center;
+
+color: #225B4F;
+
 }
 
 a {
-  color: #d7bfff;
   text-decoration: none;
 }
 
@@ -109,7 +163,7 @@ ul {
 }
 
 input, textarea {
-  font-family: Cormorant Upright;
+  font-family: Caladea;
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -135,46 +189,8 @@ input, textarea {
   position:relative;
 }
 
-
-
-.headerButton {
-  font-family:  Josefin Sans Light;
-  letter-spacing: -0.1vh;
-  font-size: 16px;
-  color: #e3ebd8;
-  border-radius:  2px;
-  border-width: 0px;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: 2px;
-  margin-right: 4px;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.headerButton:hover {
-  background-color:  rgba(255, 255, 255, 0.3);
-}
-
-button {
-  font-family: Josefin Sans Light;
-  border-radius:  3px;
-  border-width: 0px;
-  padding: 10px;
-  margin-top: 20px;
-  background-color: #a3bedc;
-  color:  rgba(100, 75, 125);
-}
-
-button:hover {
-  background-color:  #cdeafdd0;
-}
-
-.worldViewName:hover{
-  color: #e3ebd8;
-}
-
 .dropdown {
-  font-family: Cormorant Upright;
+  font-family: Caladea;
   color: #beddff;
   border: none;
   font-size: 16px;
