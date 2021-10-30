@@ -1,10 +1,11 @@
 import React from 'react';
-import Quote from './quote.js';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className="container" id="footer">
-            <Quote />
+    <div className="footerDiv" id="footer">
+            footer
     </div>
   )
 }
+
+export default Footer;
