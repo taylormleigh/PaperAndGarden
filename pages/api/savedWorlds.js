@@ -1,5 +1,5 @@
 import { connectToDatabase } from "./_connector";
-import clientPromise from '../../lib/mongodb'
+import clientPromise from '../../lib/mongodb';
 
 export default async (req, res) => {
   await connectToDatabase();

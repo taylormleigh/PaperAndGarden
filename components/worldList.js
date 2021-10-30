@@ -18,17 +18,17 @@ export default class WorldList extends React.Component {
 
   //fetches data from savedWorlds
   getWorlds = () => {
-    axios.get('/api/SavedWorlds')
-    .then((res) => {
-      res.data.map(world => {
-        this.setState({
-          worlds: [...this.state.worlds, world]
-        })
-      })
-    })
-    .catch(err => {
-      console.error('ruh roh in worldList.js getWorlds: ', err);
-    })
+    // axios.get('/api/SavedWorlds')
+    // .then((res) => {
+    //   res.data.map(world => {
+    //     this.setState({
+    //       worlds: [...this.state.worlds, world]
+    //     })
+    //   })
+    // })
+    // .catch(err => {
+    //   console.error('ruh roh in worldList.js getWorlds: ', err);
+    // })
   }
 
   render() {
