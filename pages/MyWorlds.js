@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../components/Layout.js';
 // import WorldList from '../components/worldList';
 
 export default function MyWorlds({logIn}) {
