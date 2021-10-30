@@ -1,12 +1,19 @@
 import React from 'react';
-import Layout from '../components/Layout.js';
-// import WorldList from '../components/worldList';
+import Layout from '../components/Layout';
+// import TabsNav from '../components/TabsNav.js';
+// import World from '../components/world';
 
-export default function MyWorlds({logIn}) {
+const MyWorlds = () => {
   return (
     <Layout>
-        <h1>My Worlds</h1>
+      <div id="worldViewDiv">
+        <div id="worldViewContainer">
+          <h2>My Worlds</h2>
           {/* <WorldList/> */}
+        </div>
+      </div>
     </Layout>
   )
 }
+
+export default MyWorlds;
