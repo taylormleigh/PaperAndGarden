@@ -1,8 +1,8 @@
 import { describe } from "mocha"
 
-const base = () => cy.visit('http://localhost:3000');
+const base = () => cy.visit('http://localhost:3000/MyWorlds');
 
-describe('Home - layout load', () => {
+describe('MyWorlds - layout load', () => {
   it('Checks that the main layout components have loaded', () => {
     base();
     // Main Components load
@@ -13,11 +13,10 @@ describe('Home - layout load', () => {
   })
 })
 
-describe('Home - layout functions', () => {
+describe('MyWorlds - layout functions', () => {
   it('Checks that the main layout components function correctly', () => {
     // Main Components function correctly
     base();
-    
     // Header site title links to index
     cy.get('#siteTitle').should('be.visible')
     cy.get('#siteTitle').click()
@@ -53,19 +52,16 @@ describe('Home - layout functions', () => {
   })
 })
 
-describe('Home - page load', () => {
+describe('MyWorlds - page load', () => {
   it('Checks that the page components have loaded', () => {
     base();
     // Page Components load
-    cy.get('#homeLogo').should('exist').should('be.visible')
-    cy.get('#homeQuote').should('exist').should('be.visible')
-    cy.get('#homeQuoteText').should('exist').should('be.visible')
-    cy.get('#homeBodyText').should('exist').should('be.visible')
+
 
   })
 })
 
-describe('Home - page functions', () => {
+describe('MyWorlds - page functions', () => {
   it ('Checks that the page components function correctly', () => {
     base();
     // Page Components function correctly
