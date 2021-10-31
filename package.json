@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "headless": "./node_modules/.bin/cypress run --headless",
-    "headed": "./node_modules/.bin/cypress run --headed --browser chrome"
+    "cypress:open": "npx cypress open"
   },
   "dependencies": {
     "axios": "^0.24.0",
