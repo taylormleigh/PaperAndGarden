@@ -5,25 +5,25 @@ const Footer = () => {
     <div id="footer">
       <div id="buttonNavigation">
 
-        <span id="linktreeButton">
+        <a id="linktreeButton" href="https://linktr.ee/paper.garden">
           <span className="buttonHoverText">Writing Resources</span>
-        </span>
+        </a>
 
-        <span id="githubButton">
+        <a id="githubButton" href="https://github.com/taylormleigh/PaperAndGarden">
           <span className="buttonHoverText">Github Repo</span>
-        </span>
+        </a>
 
-        <span id="tayMadeButton">
+        <a id="tayMadeButton" href="https://tay-made.com">
           <span className="buttonHoverText">Portfolio</span>
-        </span>
+        </a>
 
-        <span id="linkedInButton">
+        <a id="linkedInButton" href="https://www.linkedin.com/in/tay-huval/">
           <span className="buttonHoverText">Linked In</span>
-        </span>
+        </a>
 
-        <span id="contactButton">
+        <a id="contactButton" href="mailto:me@tay-made.com">
           <span className="buttonHoverText">Contact</span>
-        </span>
+        </a>
 
       </div>
     </div>
