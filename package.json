@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "headless": "./node_modules/.bin/cypress run --headless",
+    "headed": "./node_modules/.bin/cypress run --headed --browser chrome"
   },
   "dependencies": {
     "axios": "^0.24.0",
