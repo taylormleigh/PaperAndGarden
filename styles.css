@@ -17,6 +17,7 @@ body {
 }
 
 .container {
+  width: 55vw;
   background: grey;
 }
 
@@ -41,17 +42,24 @@ body {
 /* NAVIGATION */
 
 #navigation {
-
+  max-width: 300px;
 }
 
 .navButton {
   width: 271px;
   height: 174px;
   border-radius: 3px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .insideNavButton {
+  max-width: 200px;
+  max-height: 200px;
   padding: 30px;
+  text-align: center;
 }
 
 /* for dev only */
@@ -97,7 +105,7 @@ body {
 /* FOOTER */
 
 #footer {
-
+  height: 96px;
 }
 
 #buttonNavigation {
@@ -383,6 +391,8 @@ h4 {
   font-weight: 300;
   font-size: 18px;
   line-height: 130%;
+  margin: 0px;
+  padding: 0px;
   /* or 23px */
 
   text-align: center;
@@ -393,10 +403,11 @@ h4 {
 
 /* caption */
 h5 { 
+  margin: 0px;
   font-family: Caladea;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 100%;
   /* padding: 0px 30px 30px 30px; */
   text-align: center;
@@ -410,7 +421,7 @@ h6 {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  margin: 10;
+  margin: 5px;
   
   text-align: center;
   text-transform: uppercase;

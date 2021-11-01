@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Navigation = ({status = "selected", loggedIn = "loggedOut"}) => {
+const Navigation = ({status = "selected"}) => {
 
   return (
-    <div className="navigation" id="navigation">
+    <div id="navigation">
       
       <Link href={"/SignIn"}>
         <div id="authButton" className={`navButton ${status}`}>
           <div id="authButton" className="insideNavButton">
-            <h6 className={`${loggedIn}`}>Sign in / sign up</h6>
+            <h6 className="loggedOut">Sign in / sign up</h6>
             <h5>ready to create your own world?</h5>
           </div>
         </div>
