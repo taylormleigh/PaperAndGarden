@@ -34,6 +34,7 @@ body {
   background-size: cover; 
   background-repeat: no-repeat;
   overflow-y: auto;
+  overflow-x: hidden;
   
   display: flex;
   justify-content: center;
@@ -276,51 +277,87 @@ body {
 
 
 /* Sign In / Edit Account */
-.accountDiv {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 37.21%;
-  bottom: 21.05%;
-  
-  background: #225B4F;
-  color: #FEFDFE;
+#changeSettings {
+
 }
 
+#changeName {
+
+}
+
+#emailSettings {
+
+}
+
+#logOut {
+
+}
+
+#deleteAccount {
+
+}
 
 
 /* WORLD VIEW */
+#tabsNav {
+  justify-content: left;
+  text-align: left;
+}
+
 #worldViewDiv {
-  position: absolute;
-  width: 742px;
-  height: 452px;
-  left: 0px;
-  top: 65px;
-  
   background: #478274;
+  margin: 0;
 }
 
 #worldViewContainer {
-  position: absolute;
-  width: 710px;
-  height: 412px;
-  left: 16px;
-  top: 85px;
+  margin: 10px;
+  width: 34vw;
+  height: 400px;
   
   border: 1px solid #FEFDFE;
   box-sizing: border-box;
   border-radius: 3px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
+
+
+/* CREATE WORLD */
+/* begin page */
 #bodyTextCreate {
-  position: absolute;
-  left: 18.33%;
-  right: 18.46%;
-  top: 11.8%;
-  bottom: 18.33%;
   font-size: 18px;
+  width: 25vw;
 }
+
+#beginArrow {
+
+}
+
+/* Question pages */
+.sectionHeading {
+  height: 100px;
+  padding: 10px;
+}
+
+.questionComponent {
+  height: 260px;
+  padding: 20px;
+}
+
+.quoteComponent {
+  font-size: 14px;
+  color: #76928C;
+}
+
+.quoteComponent span {
+  align-self: flex-end;
+}
+
+.progressComponent {
+  color: #FEFDFE;
+  height: 70px;
+}
+
 
 
 
@@ -363,8 +400,6 @@ h3 {
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
-  line-height: 130%;
-  /* or 31px */
 
   text-align: center;
   text-transform: uppercase;
@@ -378,10 +413,8 @@ h4 {
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
-  line-height: 130%;
   margin: 0px;
   padding: 0px;
-  /* or 23px */
 
   text-align: center;
   text-transform: uppercase;
