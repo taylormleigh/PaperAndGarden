@@ -1,45 +1,58 @@
 import { describe } from "mocha"
 
-const base = () => cy.visit('http://localhost:3000');
+context('Actions', () => {
+  beforeEach(() => {
+    cy.visit('http://localhost:3000')
+  })
 
-describe('Home - layout load', () => {
-  it('Checks that the main layout components have loaded', () => {
-    base();
-    // Main Components load
-    cy.get('#header').should('exist').should('be.visible')
-    cy.get('#navigation').should('exist').should('be.visible')
+
+describe('Home - page load', () => {
+  it('Checks that the page components have loaded', () => {
+    // Page Components load
     cy.get('.bodyDiv').should('exist').should('be.visible')
-    cy.get('#footer').should('exist').should('be.visible')
+    cy.get('#homeLogo').should('exist').should('be.visible')
+    cy.get('#homeQuote').should('exist').should('be.visible')
+    cy.get('#homeQuoteText').should('exist').should('be.visible')
+    cy.get('#homeBodyText').should('exist').should('be.visible')
+
   })
 })
 
-describe('Home - layout functions', () => {
-  it('Checks that the main layout components function correctly', () => {
-    // Main Components function correctly
-    base();
-    
-    // Header site title links to index
+describe('Home - page functions', () => {
+  it ('Checks that the page components function correctly', () => {
+    // Page Components function correctly
+  })
+})
+
+describe('layout functions - header', () => {
+  it('Checks that the header site title links to index', () => {
+    // Header displays correctly
     cy.get('#siteTitle').should('be.visible')
+    // Header site title links to index
     cy.get('#siteTitle').click()
       .get('#homeLogo').should('be.visible')
+  })
+})
 
-    //Nav buttons all link properly
-    base();
+describe('layout functions - navigation', () => {
+  it('Checks that the navigation buttons link correctly', () => {
+    // Navigation displays correctly
     cy.get('#navigation').should('be.visible')
-
+    // Navigation buttons link correctly
     cy.get('#authButton').click()
       .url().should('contain', '/SignIn')
-    base();
     cy.get('#viewWorldsButton').click()
       .url().should('contain', '/MyWorlds')
-    base();
     cy.get('#newWorldButton').click()
       .url().should('contain', '/Create')
+  })
+})
 
-    //Footer buttons link properly
-    base();
+describe('layout functions - footer', () => {
+  it('Checks that the footer functions correctly', () => {
+    // Footer navigation displays correctly
     cy.get('#buttonNavigation').should('be.visible')
-
+    //Footer buttons link correctly
     cy.get('#linktreeButton').should('be.visible')
       .should('have.attr', 'href').and('contain', 'linktr.ee/paper.garden')
     cy.get('#githubButton').should('be.visible')
@@ -53,22 +66,4 @@ describe('Home - layout functions', () => {
   })
 })
 
-describe('Home - page load', () => {
-  it('Checks that the page components have loaded', () => {
-    base();
-    // Page Components load
-    cy.get('#homeLogo').should('exist').should('be.visible')
-    cy.get('#homeQuote').should('exist').should('be.visible')
-    cy.get('#homeQuoteText').should('exist').should('be.visible')
-    cy.get('#homeBodyText').should('exist').should('be.visible')
-
-  })
-})
-
-describe('Home - page functions', () => {
-  it ('Checks that the page components function correctly', () => {
-    base();
-    // Page Components function correctly
-
-  })
 })
