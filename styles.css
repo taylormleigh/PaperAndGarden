@@ -17,11 +17,6 @@ body {
 }
 
 .container {
-  position: absolute;
-  margin: 0 auto;
-  width: 65vw;
-  height: 90vh;
-  margin: 0 auto;
   background: grey;
 }
 
@@ -30,35 +25,14 @@ body {
 /* HEADER */
 
 #header {
-  /* position: absolute;
-  width: 1030px;
-  height: 109px;
-  margin: 0 auto; */
-  /* left: 14.31%; */
-  /* right: 14.17%; */
-  /* top: 0%; */
-  /* bottom: 87.89%; */
+
 }
 
 #siteTitle {
-  /* position: absolute;
-  width: 563px;
-  height: 79px;
-  left: 36.8%;
-  right: 8.54%;
-  top: 27.52%;
-  bottom: 0%; */
-
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: 300;
   font-size: 50px;
-  line-height: 11px;
-  /* or 21% */
-
-  /* display: flex; */
-  /* align-items: center; */
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -67,34 +41,17 @@ body {
 /* NAVIGATION */
 
 #navigation {
-  /* position: absolute; */
-  /* width: 271px;
-  height: 551px;
-  margin: 30px; */
-  /* left: 19%; */
-  /* right: 77.88%; */
-  /* top: 12.11%; */
-  /* bottom: 26.67%; */
+
 }
 
 .navButton {
   width: 271px;
   height: 174px;
-
-  /* line-height: 130%; identical to box height, or 23px */
-  /* text-align: center; */
-
-  /* background: none; */
-  /* border: none; */
-  /* box-sizing: border-box; */
   border-radius: 3px;
 }
 
 .insideNavButton {
-  /* position: relative; */
   padding: 30px;
-  /* margin: 0 auto; */
-  /* display: block; */
 }
 
 /* for dev only */
@@ -105,11 +62,7 @@ body {
 }
 
 #authButton {
-  /* position: absolute; */
-  /* left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 67.99%; */
+
 }
 
 #authButton.auth {
@@ -119,11 +72,7 @@ body {
 }
 
 #viewWorldsButton {
-  /* position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 33.82%;
-  bottom: 34.54%; */
+
 }
 
 #viewWorldsButton.viewWorlds {
@@ -133,11 +82,7 @@ body {
 }
 
 #newWorldButton {
-  /* position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 67.63%;
-  bottom: 0%; */
+
 }
 
 #newWorldButton.newWorld {
@@ -152,42 +97,21 @@ body {
 /* FOOTER */
 
 #footer {
-  /* position: absolute;
-  width: 1030px;
-  height: 96px; */
-  /* left: calc(50% - 1030px/2 - 1px);
-  top: 660px; */
+
 }
 
 #buttonNavigation {
-  /* position: absolute; */
-  /* position: absolute;
-  left: 48.83%;
-  right: 20.95%;
-  top: 18.75%;
-  bottom: 66.42%; */
-
-
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 130%;
-  /* or 13px */
-
   text-align: center;
   text-transform: uppercase;
 }
 
 .buttonHoverText {
-  display: none;
-
-  position: absolute;
-  /* left: 13.18%; */
-  right: 80%;
-  top: 217.75%;
-  bottom: -293.36%;
-
+  /* display: none; */
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
@@ -195,17 +119,12 @@ body {
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 #linktreeButton {
   position: absolute;
   width: 14.24px;
   height: 14.24px;
-  /* left: 0%;
-  right: 95.43%;
-  top: 100%;
-  bottom: -100%; */
   border-radius: 100%;
 
   color: #478274;
@@ -215,19 +134,10 @@ body {
 
 #linktreeButton:hover .buttonHoverText {
   display: block;
-  /* left: 0%; */
-  /* right: 95.43%; */
-  top: 217.75%;
-  bottom: -293.36%;
 }
 
 #githubButton {
   position: absolute;
-  /* position: absolute;
-  left: 23.86%;
-  right: 71.57%;
-  top: 100%;
-  bottom: -100%; */
   width: 14.24px;
   height: 14.24px;
   border-radius: 100%;
@@ -243,11 +153,6 @@ body {
 
 #tayMadeButton {
   position: absolute;
-  /* position: absolute; */
-  /* left: 47.71%;
-  right: 47.71%;
-  top: 100%;
-  bottom: -100%; */
   width: 14.24px;
   height: 14.24px;
   border-radius: 100%;
@@ -263,11 +168,6 @@ body {
 
 #linkedInButton {
   position: absolute;
-  /* position: absolute;
-  left: 71.57%;
-  right: 23.86%;
-  top: 100%;
-  bottom: -100%; */
   width: 14.24px;
   height: 14.24px;
   border-radius: 100%;
@@ -283,10 +183,6 @@ body {
 
 #contactButton {
   position: absolute;
-  /* left: 95.43%;
-  right: 0%;
-  top: 100%;
-  bottom: -100%; */
   width: 14.24px;
   height: 14.24px;
   border-radius: 100%;
@@ -305,13 +201,9 @@ body {
 /* CONTENT */
 
 .bodyDiv {
-  /* position: absolute; */
+  position: absolute;
   width: 742px;
   height: 551px;
-  /* left: 34.31%; */
-  /* right: 14.17%; */
-  /* top: 12%; */
-  /* bottom: 26.78%; */
 
   background: url(public/bodyDiv.png);
   background-size: cover; 
@@ -333,29 +225,17 @@ body {
 }
 
 #homeLogo {
-  position: absolute;
-  width: 93px;
-  height: 83px;
-  /* left: 324px;
-  top: 26px; */
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 #homeQuote {
-  position: absolute;
-  /* left: 0%;
-  right: 0%;
-  top: 21.96%;
-  bottom: 50.45%; */
-
+  margin-bottom: 20px;
   background: #225B4F;
 }
 
 #homeQuoteText {
-  width: 578px;
-  left: calc(50% - 578px/2);
-  top: 21.96%;
-  bottom: 52.45%;
-
+  padding: 20px;
   font-family: Caladea;
   font-style: italic;
   font-weight: lighter;
@@ -371,10 +251,8 @@ body {
 
 #homeBodyText {
   position: absolute;
-  width: 664px;
-  height: 252px;
-  left: 39px;
-  top: 286px;
+  padding-left: 40px;
+  padding-right: 40px;
 
   color: #225B4F;
 }
