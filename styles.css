@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caladea:ital@0;1&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
 
+@import url("flexboxgrid.css");
+
 /* body font: Caladea */
 /* heading font: Josefin Sans Light */
 
@@ -14,24 +16,38 @@ body {
   color: #225B4F;
 }
 
+.container {
+  position: absolute;
+  margin: 0 auto;
+  width: 65vw;
+  height: 90vh;
+  margin: 0 auto;
+  background: grey;
+}
+
 
 
 /* HEADER */
 
 #header {
-  position: absolute;
-width: 1030px;
-height: 109px;
-left: 206px;
-top: 0px;
+  /* position: absolute;
+  width: 1030px;
+  height: 109px;
+  margin: 0 auto; */
+  /* left: 14.31%; */
+  /* right: 14.17%; */
+  /* top: 0%; */
+  /* bottom: 87.89%; */
 }
 
 #siteTitle {
-  position: absolute;
+  /* position: absolute;
+  width: 563px;
+  height: 79px;
   left: 36.8%;
   right: 8.54%;
   top: 27.52%;
-  bottom: 0%;
+  bottom: 0%; */
 
   font-family: Josefin Sans;
   font-style: normal;
@@ -40,8 +56,8 @@ top: 0px;
   line-height: 11px;
   /* or 21% */
 
-  display: flex;
-  align-items: center;
+  /* display: flex; */
+  /* align-items: center; */
   text-align: center;
   text-transform: uppercase;
 }
@@ -51,34 +67,34 @@ top: 0px;
 /* NAVIGATION */
 
 #navigation {
-  position: absolute;
-  width: 271px;
+  /* position: absolute; */
+  /* width: 271px;
   height: 551px;
-  left: calc(50% - 271px/2 - 378.5px);
-  top: 109px;
-
+  margin: 30px; */
+  /* left: 19%; */
+  /* right: 77.88%; */
+  /* top: 12.11%; */
+  /* bottom: 26.67%; */
 }
 
 .navButton {
-  Width: 271px;
-  Height: 173.62px;
+  width: 271px;
+  height: 174px;
 
-  line-height: 130%; /* identical to box height, or 23px */
-  text-align: center;
+  /* line-height: 130%; identical to box height, or 23px */
+  /* text-align: center; */
 
-  background: none;
-  border: none;
-  box-sizing: border-box;
+  /* background: none; */
+  /* border: none; */
+  /* box-sizing: border-box; */
   border-radius: 3px;
 }
 
 .insideNavButton {
+  /* position: relative; */
   padding: 30px;
-  margin: 0 auto;
-
-  position: absolute;
-
-
+  /* margin: 0 auto; */
+  /* display: block; */
 }
 
 /* for dev only */
@@ -89,11 +105,11 @@ top: 0px;
 }
 
 #authButton {
-  position: absolute;
-  left: 0%;
+  /* position: absolute; */
+  /* left: 0%;
   right: 0%;
   top: 0%;
-  bottom: 67.99%;
+  bottom: 67.99%; */
 }
 
 #authButton.auth {
@@ -103,11 +119,11 @@ top: 0px;
 }
 
 #viewWorldsButton {
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: 0%;
   top: 33.82%;
-  bottom: 34.54%;
+  bottom: 34.54%; */
 }
 
 #viewWorldsButton.viewWorlds {
@@ -117,11 +133,11 @@ top: 0px;
 }
 
 #newWorldButton {
-  position: absolute;
+  /* position: absolute;
   left: 0%;
   right: 0%;
   top: 67.63%;
-  bottom: 0%;
+  bottom: 0%; */
 }
 
 #newWorldButton.newWorld {
@@ -136,19 +152,21 @@ top: 0px;
 /* FOOTER */
 
 #footer {
-  position: absolute;
+  /* position: absolute;
   width: 1030px;
-  height: 96px;
-  left: calc(50% - 1030px/2 - 1px);
-  top: 660px;
+  height: 96px; */
+  /* left: calc(50% - 1030px/2 - 1px);
+  top: 660px; */
 }
 
 #buttonNavigation {
-  position: absolute;
+  /* position: absolute; */
+  /* position: absolute;
   left: 48.83%;
   right: 20.95%;
   top: 18.75%;
-  bottom: 66.42%;
+  bottom: 66.42%; */
+
 
   font-family: Josefin Sans;
   font-style: normal;
@@ -182,10 +200,12 @@ top: 0px;
 
 #linktreeButton {
   position: absolute;
-  left: 0%;
+  width: 14.24px;
+  height: 14.24px;
+  /* left: 0%;
   right: 95.43%;
   top: 100%;
-  bottom: -100%;
+  bottom: -100%; */
   border-radius: 100%;
 
   color: #478274;
@@ -203,10 +223,13 @@ top: 0px;
 
 #githubButton {
   position: absolute;
+  /* position: absolute;
   left: 23.86%;
   right: 71.57%;
   top: 100%;
-  bottom: -100%;
+  bottom: -100%; */
+  width: 14.24px;
+  height: 14.24px;
   border-radius: 100%;
 
   color: #95A090;
@@ -220,10 +243,13 @@ top: 0px;
 
 #tayMadeButton {
   position: absolute;
-  left: 47.71%;
+  /* position: absolute; */
+  /* left: 47.71%;
   right: 47.71%;
   top: 100%;
-  bottom: -100%;
+  bottom: -100%; */
+  width: 14.24px;
+  height: 14.24px;
   border-radius: 100%;
 
   color: #F48B7C;
@@ -237,10 +263,13 @@ top: 0px;
 
 #linkedInButton {
   position: absolute;
+  /* position: absolute;
   left: 71.57%;
   right: 23.86%;
   top: 100%;
-  bottom: -100%;
+  bottom: -100%; */
+  width: 14.24px;
+  height: 14.24px;
   border-radius: 100%;
   
   color: #9AD3AE;
@@ -254,10 +283,12 @@ top: 0px;
 
 #contactButton {
   position: absolute;
-  left: 95.43%;
+  /* left: 95.43%;
   right: 0%;
   top: 100%;
-  bottom: -100%;
+  bottom: -100%; */
+  width: 14.24px;
+  height: 14.24px;
   border-radius: 100%;
 
   color: #FFB470;
@@ -274,18 +305,19 @@ top: 0px;
 /* CONTENT */
 
 .bodyDiv {
-  position: absolute;
+  /* position: absolute; */
   width: 742px;
   height: 551px;
-  left: 34.31%;
-  right: 14.17%;
-  top: 12%;
-  bottom: 26.78%;
+  /* left: 34.31%; */
+  /* right: 14.17%; */
+  /* top: 12%; */
+  /* bottom: 26.78%; */
 
   background: url(public/bodyDiv.png);
   background-size: cover; 
   background-repeat: no-repeat;
-  box-sizing: border-box;
+  /* overflow:hidden; */
+  /* box-sizing: border-box; */
   border-radius: 3px;
 }
 
@@ -304,16 +336,16 @@ top: 0px;
   position: absolute;
   width: 93px;
   height: 83px;
-  left: 324px;
-  top: 26px;
+  /* left: 324px;
+  top: 26px; */
 }
 
 #homeQuote {
   position: absolute;
-  left: 0%;
+  /* left: 0%;
   right: 0%;
   top: 21.96%;
-  bottom: 50.45%;
+  bottom: 50.45%; */
 
   background: #225B4F;
 }
