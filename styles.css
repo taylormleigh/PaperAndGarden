@@ -26,7 +26,7 @@ body {
 /* HEADER */
 
 #header {
-  max-height: 55px;
+  max-height: 92px;
 }
 
 #siteTitle {
@@ -35,6 +35,7 @@ body {
   text-align: end;
   font-weight: 300;
   font-size: 50px;
+  margin-right: 5vw;
   text-transform: uppercase;
 }
 
@@ -222,8 +223,8 @@ body {
   overflow-y: auto;
   
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
   border-radius: 3px;
   border: 1px solid #F48B7C;
@@ -241,12 +242,12 @@ body {
 }
 
 #homeLogo {
-  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 #homeQuote {
   margin-bottom: 20px;
+  align-items: center;
   background: #225B4F;
 }
 
@@ -278,18 +279,14 @@ body {
 
 #signInLogo {
   position: absolute;
-  left: 43.67%;
-  right: 43.8%;
-  top: 19.42%;
-  bottom: 65.52%;
 }
 
 .signInDiv {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 37.21%;
-  bottom: 37.21%;
+  margin-bottom: 20px;
+  align-items: center;
+  background: #225B4F;
+
+  align-items: center;
 
   background: #225B4F;
   color: #FEFDFE;
