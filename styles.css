@@ -164,7 +164,11 @@ body {
 /* FOOTER */
 
 #footer {
-  height: 96px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px;
 }
 
 #buttonNavigation {
@@ -175,10 +179,24 @@ body {
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
+
+  width: 15vw;
+  margin-left: 13vw;
+}
+
+.footerButton {
+  position: absolute;
+  width: 14.24px;
+  height: 14.24px;
+  border-radius: 100%;
+
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .buttonHoverText {
-  /* display: none; */
+  display: none;
+  position: absolute;
+  width: 60px;
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
@@ -186,81 +204,39 @@ body {
   line-height: 130%;
   text-align: center;
   text-transform: uppercase;
+  
+  margin-top: 20px;
+  margin-left: -1.4vw;
+  padding: 5px;
+}
+
+.footerButton:hover .buttonHoverText {
+  display: flex;
 }
 
 #linktreeButton {
-  position: absolute;
-  width: 14.24px;
-  height: 14.24px;
-  border-radius: 100%;
-
   color: #478274;
   background: #478274;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#linktreeButton:hover .buttonHoverText {
-  display: block;
 }
 
 #githubButton {
-  position: absolute;
-  width: 14.24px;
-  height: 14.24px;
-  border-radius: 100%;
-
   color: #95A090;
   background: #95A090;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#githubButton:hover .buttonHoverText {
-  display: block;
 }
 
 #tayMadeButton {
-  position: absolute;
-  width: 14.24px;
-  height: 14.24px;
-  border-radius: 100%;
-
   color: #F48B7C;
   background: #F48B7C;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#tayMadeButton:hover .buttonHoverText {
-  display: block;
 }
 
 #linkedInButton {
-  position: absolute;
-  width: 14.24px;
-  height: 14.24px;
-  border-radius: 100%;
-  
   color: #9AD3AE;
   background: #9AD3AE;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#linkedInButton:hover .buttonHoverText {
-  display: block;
 }
 
 #contactButton {
-  position: absolute;
-  width: 14.24px;
-  height: 14.24px;
-  border-radius: 100%;
-
   color: #FFB470;
   background: #FFB470;
-  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
-}
-
-#contactButton:hover .buttonHoverText {
-  display: block;
 }
 
 
