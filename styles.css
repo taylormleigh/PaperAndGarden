@@ -23,6 +23,60 @@ body {
 
 
 
+/* CONTENT */
+
+.bodyDiv {
+  /* max-width: 742px; */
+  width: 35vw;
+  height: 551px;
+
+  background: url(public/bodyDiv.png);
+  background-size: cover; 
+  background-repeat: no-repeat;
+  overflow-y: auto;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 3px;
+  border: 1px solid #F48B7C;
+}
+
+.logo{
+  content: url(public/logo.png);
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.greenContainer {
+  margin-bottom: 20px;
+  align-items: center;
+  background: #225B4F;
+  justify-content: center;
+
+  display: flex;
+  overflow-x: wrap;
+  width: 35vw;
+}
+
+.greenContainerText {
+  padding: 20px;
+  font-family: Caladea;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 15px;
+  line-height: 130%;
+
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #FEFDFE;
+}
+
+
+
 /* HEADER */
 
 #header {
@@ -210,88 +264,18 @@ body {
 
 
 
-/* CONTENT */
-
-.bodyDiv {
-  /* max-width: 742px; */
-  width: 35vw;
-  height: 551px;
-
-  background: url(public/bodyDiv.png);
-  background-size: cover; 
-  background-repeat: no-repeat;
-  overflow-y: auto;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 3px;
-  border: 1px solid #F48B7C;
-}
-
-
-
-
-
 /* HOME */
 
-.logo{
-  content: url(public/logo.png);
-  margin: 0 auto;
-}
-
-#homeLogo {
-  margin-bottom: 10px;
-}
-
-#homeQuote {
-  margin-bottom: 20px;
-  align-items: center;
-  background: #225B4F;
-}
-
-#homeQuoteText {
-  padding: 20px;
-  font-family: Caladea;
-  font-style: italic;
-  font-weight: lighter;
-  font-size: 15px;
-  line-height: 130%;
-
-  display: inline-block;
-  align-items: center;
-  text-align: center;
-
-  color: #FEFDFE;
-}
 
 #homeBodyText {
   padding-left: 40px;
   padding-right: 40px;
-
   color: #225B4F;
 }
 
 
 
 /* Sign In / Edit Account */
-
-#signInLogo {
-  position: absolute;
-}
-
-.signInDiv {
-  margin-bottom: 20px;
-  align-items: center;
-  background: #225B4F;
-
-  align-items: center;
-
-  background: #225B4F;
-  color: #FEFDFE;
-}
-
 .accountDiv {
   position: absolute;
   left: 0%;
