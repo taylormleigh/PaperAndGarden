@@ -51,7 +51,7 @@ import Navigation from "./Navigation"
 const Layout = ({children}) => {
 
   return (
-    <>
+    <div className="container">
 
     <div className="row">
       <div className="col-xs">
@@ -80,7 +80,7 @@ const Layout = ({children}) => {
       </div>
     </div>
 
-    </>
+    </div>
   )
 }
 
