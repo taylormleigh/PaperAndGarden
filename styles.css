@@ -7,18 +7,10 @@
 
 body {
   background: #FEFDFE;
-  font-family: Caladea;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 130%;
-  text-align: center;
-  color: #225B4F;
 }
 
 .container {
   width: 50vw;
-  /* background: grey; */
 }
 
 
@@ -26,9 +18,13 @@ body {
 /* CONTENT */
 
 .bodyDiv {
-  /* max-width: 742px; */
   width: 35vw;
   height: 551px;
+
+  font-family: Caladea;
+  font-size: 18px;
+  text-align: center;
+  color: #225B4F;
 
   background: url(public/bodyDiv.png);
   background-size: cover; 
@@ -58,7 +54,7 @@ body {
 
   display: flex;
   overflow-x: wrap;
-  width: 35vw;
+  min-width: 35vw;
 }
 
 .greenContainerText {
@@ -74,6 +70,12 @@ body {
   text-align: center;
 
   color: #FEFDFE;
+}
+
+.bodyText {
+  padding-left: 40px;
+  padding-right: 40px;
+  color: #225B4F;
 }
 
 
@@ -244,11 +246,7 @@ body {
 /* HOME */
 
 
-#homeBodyText {
-  padding-left: 40px;
-  padding-right: 40px;
-  color: #225B4F;
-}
+
 
 
 
@@ -486,4 +484,187 @@ input, textarea {
   width: 20%;
   background-color: rgba(255, 255, 255, 0.08);
   height: 30px;
+}
+
+
+
+/* MOBILE */
+
+/*  scale text */
+@media only screen and (max-width: 1540px) {
+  .container {
+    width: 55vw;
+  }
+	.bodyDiv {
+    font-size: 0.9rem;
+    min-width: 40vw;
+  }
+  .greenContainerText {
+    font-size: 0.7rem;
+  }
+  .greenContainer {
+    min-width: 40vw;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  h4 {
+    font-size: 0.8rem;
+  }
+  h5 {
+    font-size: 0.7rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+  .navButton {
+    min-width: 150px;
+  }
+  #footer {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+  }
+  #siteTitle {
+    margin-right: 4vw;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    width: 70vw;
+  }
+  .bodyDiv {
+    min-width: 48vw;
+    font-size: 0.9rem;
+  }
+  .greenContainer {
+    min-width: 48vw;
+  }
+  .greenContainerText {
+    font-size: 0.7rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  .navButton {
+    min-width: 20vw;
+  }
+  #siteTitle {
+    margin-right: 2vw;
+  }
+  #buttonNavigation {
+    margin-left: 18vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 90vw;
+  }
+  .bodyDiv {
+    min-width: 67vw;
+  }
+  .greenContainer {
+    min-width: 67vw;
+  }
+  .greenContainerText {
+    font-size: 0.8rem;
+  }
+  .navButtonText {
+    display: none;
+  }
+  .navButton {
+    width: 8vw;
+  }
+  .bodyDiv {
+    width: 65vw;
+  }
+  
+}
+
+/* Full Width */
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+  .bodyDiv{
+    font-size: 1rem;
+    min-width: 99.9vw;
+
+    height: max-content;
+    padding: 20px 0px 20px;
+  }
+  .greenContainer {
+    min-width: 99.9vw;
+  }
+  .greenContainerText {
+    font-size: 0.9rem;
+  }
+  .row {
+    width: 100%;
+    margin: 1% 0 1% 0%;
+  }
+  .col-xs {
+    width: 100%;
+  }
+  .box {
+    width: 100%;
+  }
+  .greenContainer {
+    min-width: 99.9vw;
+  }
+  .footerButton {
+    margin-right: 200px;
+  }
+  .buttonHoverText {
+    display: flex;
+    font-size: 0.7rem;
+  }
+  .navButton {
+    min-width: 99.9vw;
+    height: 60px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F48B7C;
+  }
+  .navButtonHeader {
+    width: 100%;
+    white-space: nowrap;
+    inline-size: min-content; 
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+  #header {
+    min-width: 98vw;
+    margin: 10px;
+  }
+  #siteTitle {
+    text-align: center;
+    white-space: nowrap;
+    inline-size: fit-content;
+    margin: 0 auto;
+  }
+  #buttonNavigation {
+    width: 100%;
+    /* position: relative; */
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  h1 {
+    font-size: 1.4rem;
+  }
 }

@@ -8,7 +8,7 @@ const Create = () => {
   
   return (
     <Layout>
-      <div id="bodyTextCreate">
+      <div className="bodyText">
         <h2>Create a New World</h2>
         These questions are designed to inspire you to develop a setting that exists more realistically within your own head and therefore in your writing.
 

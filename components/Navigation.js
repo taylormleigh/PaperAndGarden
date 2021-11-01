@@ -9,8 +9,8 @@ const Navigation = ({status = "selected"}) => {
       <Link href={"/SignIn"}>
         <div id="authButton" className={`navButton ${status}`}>
           <div id="authButton" className="insideNavButton">
-            <h6 className="loggedOut">Sign in / sign up</h6>
-            <h5>ready to create your own world?</h5>
+            <h6 className="loggedOut navButtonHeader">Sign in / sign up</h6>
+            <h5 className="navButtonText">ready to create your own world?</h5>
           </div>
         </div>
       </Link>
@@ -19,8 +19,8 @@ const Navigation = ({status = "selected"}) => {
       <Link href={"/MyWorlds"}>
         <div id="viewWorldsButton" className={`navButton ${status}`}>
           <div id="authButton" className="insideNavButton">
-            <h6>My Worlds</h6>
-            <h5>easily view and edit the worlds you have created</h5>
+            <h6 className="navButtonHeader">My Worlds</h6>
+            <h5 className="navButtonText">easily view and edit the worlds you have created</h5>
           </div>
         </div>
       </Link>
@@ -29,8 +29,8 @@ const Navigation = ({status = "selected"}) => {
       <Link href={"/Create"}>
         <div id="newWorldButton" className={`navButton ${status}`}>
           <div id="authButton" className="insideNavButton">
-            <h6>Create New</h6>
-            <h5>start filling out information for your new world - everything from the flora & fauna of a region to local social customs</h5>
+            <h6 className="navButtonHeader">Create New</h6>
+            <h5 className="navButtonText">start filling out information for your new world - everything from the flora & fauna of a region to local social customs</h5>
           </div>
         </div>
       </Link>
