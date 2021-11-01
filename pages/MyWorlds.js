@@ -3,17 +3,40 @@ import Layout from '../components/Layout';
 // import TabsNav from '../components/TabsNav.js';
 // import World from '../components/world';
 
-const MyWorlds = () => {
-  return (
-    <Layout>
-      <div id="worldViewDiv">
-        <div id="worldViewContainer">
-          <h2>My Worlds</h2>
-          {/* <WorldList/> */}
+class MyWorlds extends React.Component{
+
+  constructor(){
+    super()
+    this.state = {
+      worlds: [], //send to WorldList
+      worldNames: [] //send to TabsNav
+    }
+  }
+
+  componentDidMount() {
+    this.getWorlds();
+  }
+
+  //gets entire world object and adds to state
+  getWorlds() {
+
+  }
+
+  render() {
+    return (
+      <Layout>
+        <div id="tabsNav">
+          Tabs Navigation 
         </div>
-      </div>
-    </Layout>
-  )
+        <div id="worldViewDiv" className="greenContainer">
+          <div id="worldViewContainer">
+            {/* <WorldList/> */}
+          </div>
+        </div>
+        <div id="exportWorld">Export World</div>
+      </Layout>
+    )
+  }
 }
 
 export default MyWorlds;
