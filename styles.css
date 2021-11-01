@@ -10,15 +10,15 @@ body {
   font-family: Caladea;
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 130%;
   text-align: center;
   color: #225B4F;
 }
 
 .container {
-  width: 55vw;
-  background: grey;
+  width: 50vw;
+  /* background: grey; */
 }
 
 
@@ -26,12 +26,13 @@ body {
 /* HEADER */
 
 #header {
-
+  max-height: 55px;
 }
 
 #siteTitle {
   font-family: Josefin Sans;
   font-style: normal;
+  text-align: end;
   font-weight: 300;
   font-size: 50px;
   text-transform: uppercase;
@@ -43,12 +44,14 @@ body {
 
 #navigation {
   max-width: 300px;
+  max-height: 551px;
 }
 
 .navButton {
-  width: 271px;
+  max-width: 271px;
   height: 174px;
   border-radius: 3px;
+  margin-bottom: 15px;
 
   display: flex;
   align-items: center;
@@ -209,15 +212,19 @@ body {
 /* CONTENT */
 
 .bodyDiv {
-  position: absolute;
-  width: 742px;
+  /* max-width: 742px; */
+  width: 35vw;
   height: 551px;
 
   background: url(public/bodyDiv.png);
   background-size: cover; 
   background-repeat: no-repeat;
-  /* overflow:hidden; */
-  /* box-sizing: border-box; */
+  overflow-y: auto;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   border-radius: 3px;
   border: 1px solid #F48B7C;
 }
@@ -248,7 +255,7 @@ body {
   font-family: Caladea;
   font-style: italic;
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 130%;
 
   display: inline-block;
@@ -259,7 +266,6 @@ body {
 }
 
 #homeBodyText {
-  position: absolute;
   padding-left: 40px;
   padding-right: 40px;
 
