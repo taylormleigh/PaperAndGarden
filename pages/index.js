@@ -5,7 +5,7 @@ const Home = () => {
 
   return (
     <Layout>
-      <div>
+      <>
 
         <div id="homeLogo" className="logo"></div>
         <div id="homeQuote">
@@ -21,7 +21,7 @@ const Home = () => {
         </div>
 
           
-      </div>
+      </>
     </Layout>
     );
 }
