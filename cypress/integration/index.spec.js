@@ -11,9 +11,9 @@ describe('Home - page load', () => {
     // Page Components load
     cy.get('.bodyDiv').should('exist').should('be.visible')
     cy.get('#homeLogo').should('exist').should('be.visible')
-    cy.get('#homeQuote').should('exist').should('be.visible')
-    cy.get('#homeQuoteText').should('exist').should('be.visible')
-    cy.get('#homeBodyText').should('exist').should('be.visible')
+    cy.get('.greenContainer').should('exist').should('be.visible')
+    cy.get('.greenContainerText').should('exist').should('be.visible')
+    cy.get('.bodyText').should('exist').should('be.visible')
 
   })
 })

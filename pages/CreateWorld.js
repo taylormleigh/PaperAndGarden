@@ -1,6 +1,9 @@
 import React from 'react';
 import Layout from '../components/Layout';
-// import QuestionGenerator from '../components/QuestionGenerator';
+import axios from 'axios';
+
+import CreateHeading from '../components/CreateHeading.js';
+import QuestionGenerator from '../components/QuestionGenerator';
 // import QuoteGenerator from '../components/QuoteGenerator';
 // import Progress from '../components/Progress';
 
@@ -9,42 +12,128 @@ class CreateWorld extends React.Component {
   constructor() {
     super()
     this.state = {
-      questions: [], //question/saved answer objects
+      sections: [], //questions
+      sectionsLength: 0,
+      questionsLength: 0,
       answer: "", //user input
-      index: 0, //index of current question
+      index: [0,0], //index of [current section, current question]
     }
+    this.handleAnswers = this.handleAnswers.bind(this);
+    this.handleNext = this.handleNext.bind(this);
   }
 
   componentDidMount() {
-
+    this.getQuestions();
   }
 
-  // axios request questions and their saved answers
-  getQuestions() {
+  // axios request questions
+  getQuestions = () => {
+    axios.get('/api/questions')
+    .then((response) => {
+      // console.log(response.data)
+      response.data.map((item) => {
+        this.setState({
+          sections: [...this.state.sections, item]
+        })
+      })
 
+      this.setState({
+        sectionsLength: response.data.length
+      })
+
+      let questLength = response.data[this.state.index[0]].questions.length;
+      this.setState({
+        questionsLength: questLength
+      })
+
+
+    })
+    .catch((err) => {
+      console.error('ruh roh in index.js in componentDidMount', err);
+    })
   }
 
   // axios request submits answers on 
-  handleAnswers(e) {
+  handleAnswers = (e) => {
     e.preventDefault();
-    // sends e.target.value as answer to the question at index
+    // sends e.target.value as answer to the question at index to a newWorld object
 
+  }
+
+  //goes to next or previous question
+  handleNext = (e) => {
+    e.preventDefault();
+
+    let section = this.state.index[0];
+    let question = this.state.index[1];
+
+    let endOfSections = this.state.sectionsLength - 1;
+    let endOfQuestions = this.state.questionsLength - 1;
+    
+    //depending on e.target.id goes back or forward
+    if (e.target.id === "backArrow") {
+      // don't go negative if at the first question/section
+      if (section === 0 && question === 0) {
+
+      } else if (question === 0 && section !== 0) {
+        // if at the beginning of questions go back to previous section
+        this.getQuestions();
+        
+        this.setState({
+          index: [section-=1, endOfQuestions]
+        })
+
+
+        
+        
+      } else {
+        this.getQuestions();
+        
+        this.setState({
+          index: [section, question-=1]
+        })
+        
+
+      }
+
+    } else if (e.target.id === "forwardArrow") {
+
+      //if at the end of questions and sections, don't move forward
+      if (question === endOfQuestions && section === endOfSections) {
+        
+        //if at end of questions list, move forward a section
+      } else if (question === endOfQuestions && section !== endOfSections) {
+        this.getQuestions();
+
+        this.setState({
+          index: [section+=1, 0]
+        })
+
+
+      } else {
+        this.getQuestions();
+        // move forward a question
+        this.setState({
+          index: [section, question+=1]
+        })
+
+
+      }
+
+    }
   }
   
   render() {
     return (
       <Layout>
-        <div className="sectionHeading">
-          <h3>Section: Title
-          <br/><small>Subsection</small></h3>
-        </div>
+        <CreateHeading section={this.state.sections[this.state.index[0]]} />
 
-        <div className="questionComponent">
-          question component 
-          <br/>input questionsList= answersList=
-          <br/>returns user answers
-          <br/>returns index of question for progress component
-        </div>
+        <QuestionGenerator
+          section={this.state.sections[this.state.index[0]]}
+          current={this.state.index[1]}
+          handleAnswers={this.handleAnswers}
+          handleNext={this.handleNext}
+        />
         <span className="quoteComponent">
           quote component
         </span>
