@@ -1,12 +1,13 @@
 import React from 'react';
 
-const CreateHeading = ({section}) => {
-  if (section) {
+const CreateHeading = ({titleName, section, subsection}) => {
+
+  if (section && subsection) {
 
     return (
       <div className="sectionHeading">
-        <h3>World: WorldName
-        <br/><small>{section.sectionName}</small>
+        <h3>{section}: {titleName}
+        <br/><small>{subsection}</small>
         </h3>
       </div>
     );
