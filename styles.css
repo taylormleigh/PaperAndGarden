@@ -530,7 +530,7 @@ input, textarea {
     width: 100%;
   }
   #siteTitle {
-    margin-right: 4vw;
+    margin-right: 3vw;
   }
 }
 
@@ -555,7 +555,7 @@ input, textarea {
     min-width: 20vw;
   }
   #siteTitle {
-    margin-right: 2vw;
+    margin-right: 10vw;
   }
   #buttonNavigation {
     margin-left: 18vw;
