@@ -3,8 +3,6 @@
 
 ![logo](public/builderlogo.png)
 
----
-
 *Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.*
 
 *We can help you discover the world your story deserves.*
