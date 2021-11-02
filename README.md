@@ -9,11 +9,15 @@ This ongoing personal project is an app for storytellers (novelists, screenwrite
 Paper & Garden is a full-stack web application that takes in input about a fictional world and saves the information to a user's account.
 
 ### [Live Demo](http://papergarden.tay-made.com)
-### [Figma](https://www.figma.com/file/hN1TvqZse7avr7pcmeWt5r/Paper%26Garden?node-id=0%3A11)\
+### [Figma](https://www.figma.com/file/hN1TvqZse7avr7pcmeWt5r/Paper%26Garden?node-id=0%3A11)
 
-*"Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.
+---
 
-We can help you discover the world your story deserves."*
+*Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.
+
+We can help you discover the world your story deserves.*
+
+---
 
 ### What does the app do?
 * Paper & Garden offers a user-friendly way to develop fictional worlds.
