@@ -488,22 +488,22 @@ input, textarea {
 
 
 
-/* MOBILE */
+/* RESPONSIVE CSS */
 
 /*  scale text */
 @media only screen and (max-width: 1540px) {
   .container {
-    width: 55vw;
+    width: 57vw;
   }
 	.bodyDiv {
     font-size: 0.9rem;
-    min-width: 40vw;
+    min-width: 41vw;
   }
   .greenContainerText {
     font-size: 0.7rem;
   }
   .greenContainer {
-    min-width: 40vw;
+    min-width: 41vw;
   }
   h2 {
     font-size: 1.1rem;
@@ -584,11 +584,34 @@ input, textarea {
   .bodyDiv {
     width: 65vw;
   }
-  
+}
+/* iPad */
+@media only screen and (max-width: 770px) {
+  #footer {
+    /* min-width: 40vw; */
+    justify-content: flex-end;
+    margin: 0px;
+  }
+  #buttonNavigation {
+    /* flex-flow: row nowrap; */
+    /* justify-content: space-around; */
+    min-width: 67vw;
+    margin-right: 3vw;
+    /* padding: 10px; */
+  }
+  .footerButton {
+    align-self: center;
+    width: 20px;
+    height: 20px;
+  }
+  .buttonHoverText {
+    display: flex;
+    margin-top: 30px;
+  }
 }
 
 /* Full Width */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 735px) {
   .container {
     width: 100%;
   }
