@@ -50,7 +50,8 @@ let region = {
     geography: [
       {
         question: "What type of habitat is it?",
-        "placeholder": ["desert", "tundra", "grassland", "forest", "rainforest", "wetland", "aquatic"],
+        // placeholder: ["desert", "tundra", "grassland", "forest", rainforest, "wetland", "aquatic"],
+        placeholder: "desert, tundra, grassland, forest, rainforest, wetland, aquatic",
         type: "dropdown",
         answer: ""
       },
