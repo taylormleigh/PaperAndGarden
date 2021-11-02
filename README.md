@@ -4,10 +4,16 @@
 ![logo](public/builderlogo.png)
 
 ### Introduction
-This ongoing personal project is an app for storytellers (novelists, screenwriters, etc.) to assist in world-building. I wanted to use this project as an opportunity to explore features new to me using vanilla React and CSS rather than utilizing libraries. Paper & Garden is a full-stack web application that takes in input about a fictional world and saves the information to a user's account.
+This ongoing personal project is an app for storytellers (novelists, screenwriters, etc.) to assist in world-building. I wanted to use this project as an opportunity to explore features new to me using vanilla React and CSS rather than utilizing libraries. 
+
+Paper & Garden is a full-stack web application that takes in input about a fictional world and saves the information to a user's account.
 
 ### [Live Demo](http://papergarden.tay-made.com)
-### [Figma](https://www.figma.com/file/hN1TvqZse7avr7pcmeWt5r/Paper%26Garden?node-id=0%3A11)
+### [Figma](https://www.figma.com/file/hN1TvqZse7avr7pcmeWt5r/Paper%26Garden?node-id=0%3A11)\
+
+_"Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.
+
+We can help you discover the world your story deserves."_\
 
 ### What does the app do?
 * Paper & Garden offers a user-friendly way to develop fictional worlds.
