@@ -72,27 +72,24 @@ class CreateWorld extends React.Component {
     
     //depending on e.target.id goes back or forward
     if (e.target.id === "backArrow") {
+      
       // don't go negative if at the first question/section
       if (section === 0 && question === 0) {
 
-      } else if (question === 0 && section !== 0) {
         // if at the beginning of questions go back to previous section
+      } else if (question === 0 && section !== 0) {
         this.getQuestions();
         
         this.setState({
           index: [section-=1, endOfQuestions]
         })
 
-
-        
-        
       } else {
         this.getQuestions();
         
         this.setState({
           index: [section, question-=1]
         })
-        
 
       }
 
@@ -108,16 +105,12 @@ class CreateWorld extends React.Component {
         this.setState({
           index: [section+=1, 0]
         })
-
-
+        // move forward a question
       } else {
         this.getQuestions();
-        // move forward a question
         this.setState({
           index: [section, question+=1]
         })
-
-
       }
 
     }
