@@ -1,8 +1,7 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import Link from 'next/link';
-// import ArrowNavButton from '../components/ArrowNavButton';
-{/* <Link href={"/CreateWorld"}></Link> */}
+import ArrowNavButton from '../components/ArrowNavButton';
+
 
 const Create = () => {
   
@@ -19,9 +18,7 @@ const Create = () => {
         <p/>Click the right arrow to begin.
         <br/><h5>(Your progress will be saved automatically)</h5>
       </div>
-      <div id="beginArrow">
-        ->
-      </div>
+      <ArrowNavButton direction={"/CreateWorld"}/>
     </Layout>
   );
 }
