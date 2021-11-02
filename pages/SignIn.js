@@ -6,8 +6,8 @@ const SignIn = () => {
   return (
     <Layout>
       <div id="signInLogo" className="logo"></div>
-        <div className="signInDiv">
-          Sign In with Google
+        <div className="greenContainer">
+          <div className="greenContainerText">Sign In with Google</div>
         </div>
     </Layout>
   )
