@@ -33,8 +33,9 @@ Paper & Garden is a full-stack web application that takes in input about a ficti
 
 ### Challenges
 * Designing a simple, aesthetically pleasing, easily accessible UI
-* Creating a scalable database
 * Creating custom hooks to create a fully-functional form without utilizing a pre-made library.
+* Researching how writers develop worlds in order to understand user needs and develop user stories.
+* Optimizing user’s ability to create multiple worlds, multiple regions within each world, and multiple cities within each region with a scalable database.
 * Using as few pre-made frameworks and tools as possible, in order to create many features from scratch for the purpose of understanding better how they work - and because it was more fun to have that extra challenge (listen, I have an odd definition of fun)
 
 ### Minimum Viable Product:
