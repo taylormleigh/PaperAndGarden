@@ -167,49 +167,49 @@ body {
 
 #footer {
   height: 70px;
+  min-width: 35vw;
+  padding: 15px;
+
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 15px;
 }
 
 #buttonNavigation {
-  font-family: Josefin Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 10px;
-  line-height: 130%;
-  text-align: center;
-  text-transform: uppercase;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 12vw;
 
-  width: 15vw;
-  margin-left: 13vw;
+  margin-left: 12vw;
+}
+
+.footerButtonContainer {
+  flex-flow: column wrap;
+  display: flex;
 }
 
 .footerButton {
-  position: absolute;
   width: 14.24px;
   height: 14.24px;
   border-radius: 100%;
-
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .buttonHoverText {
   display: none;
-  position: absolute;
+  /* display: flex; */
   width: 60px;
+
   font-family: Josefin Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 130%;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
+  align-self: center;
   
-  margin-top: 20px;
-  margin-left: -1.4vw;
-  padding: 5px;
+  margin-top: 25px;
+  margin-left: -20px;
 }
 
 .footerButton:hover .buttonHoverText {
@@ -648,7 +648,7 @@ input, textarea {
     font-size: 1.2rem;
   }
   #header {
-    min-width: 98vw;
+    min-width: 99.9vw;
     margin: 10px;
   }
   #siteTitle {
@@ -657,9 +657,57 @@ input, textarea {
     inline-size: fit-content;
     margin: 0 auto;
   }
+  #footer {
+    min-width: 99vw;
+    justify-content: center;
+    margin: 0px;
+  }
   #buttonNavigation {
-    width: 100%;
-    /* position: relative; */
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    min-width: 99vw;
+    margin: 0vw;
+    padding: 10px;
+  }
+  .footerButtonContainer {
+    width: 1vw;
+  }
+  .footerButton {
+    align-self: center;
+    width: 30px;
+    height: 30px;
+  }
+  .buttonHoverText {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #footer {
+    margin: 0px;
+    padding: 0px;
+  }
+  #buttonNavigation {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+  }
+  .footerButtonContainer {
+    border: 1px solid #F48B7C;
+    min-width: 99.9vw;
+    height: 60px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+  .buttonHoverText {
+    font-size: 1rem;
+    font-weight: 300;
+    inline-size: max-content;
+    margin-top: 7px;
+    margin-left: 40px;
   }
 }
 
