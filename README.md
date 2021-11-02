@@ -1,6 +1,4 @@
-<p align="center">
 # Paper & Garden
-</p>
 ## *A World Building Resource for Storytellers*
 
 ![logo](public/builderlogo.png)
