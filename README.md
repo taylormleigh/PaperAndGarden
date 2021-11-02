@@ -51,7 +51,7 @@ Paper & Garden is a full-stack web application that takes in input about a ficti
 * When the user logs in, the information is validated via axios get request.
 * When the user creates a new world, an axios post request sends the data to the Mongo database without a server.
 * When the user fills out a form, the information is saved in state via a custom React hook.
-* When the user submits a form, the information about the world they create is saved to the database.
+* When the user submits a form answer by pressing the "next" button, the information about the world they create is automatically saved to the database.
 
 ### Required Research
 * Though the original project was to accomplish the MVP of the concept, I will be using a Feature Branch Workflow as it evolves.
