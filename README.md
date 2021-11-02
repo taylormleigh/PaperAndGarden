@@ -1,5 +1,6 @@
 <p align="center">
 # Paper & Garden
+</p>
 ## *A World Building Resource for Storytellers*
 
 ![logo](public/builderlogo.png)
@@ -11,7 +12,7 @@
 *We can help you discover the world your story deserves.*
 
 ---
-</p>
+
 
 ### Introduction
 This ongoing personal project is an app for storytellers (novelists, screenwriters, etc.) to assist in world-building. I wanted to use this project as an opportunity to explore features new to me using vanilla React and CSS rather than utilizing libraries. 
