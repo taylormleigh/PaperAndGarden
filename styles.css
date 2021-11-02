@@ -314,19 +314,23 @@ body {
 }
 
 .questionComponent {
-  /* display: flex; */
   justify-content: center;
   height: 260px;
   padding: 20px;
 }
 
 .question {
+  white-space: pre-wrap;
+  display: flex;
+  justify-content: center;
   margin-bottom: 15px;
+  word-wrap: normal;
 }
 
 .questionTextArea {
   min-height: 120px;
-  min-width: 20vw;
+  min-width: 25vw;
+  max-width: 28vw;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
