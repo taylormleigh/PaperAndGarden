@@ -2,7 +2,7 @@ let world = {
   section: "world",
   "world name": "",
   subsections : {
-    "world basics": [
+    basics: [
       {
         question: "Name your world \n(note: you can NOT change the name of your world later)",
         placeholder: "world name",
@@ -33,7 +33,7 @@ let region = {
   section: "region",
   "region name": "",
   subsections : {
-    "region basics": [
+    basics: [
       {
         question: "Name your Region",
         placeholder: "region name",
@@ -48,12 +48,12 @@ let region = {
       },
     ],
     geography: [
-      // {
-      //   question: "What type of habitat is it?",
-      //   "placeholder": ["desert", "tundra", "grassland", "forest", "rainforest", "wetland", "aquatic"],
-      //   type: "dropdown",
-      //   answer: ""
-      // },
+      {
+        question: "What type of habitat is it?",
+        "placeholder": ["desert", "tundra", "grassland", "forest", "rainforest", "wetland", "aquatic"],
+        type: "dropdown",
+        answer: ""
+      },
     ],
     "flora & fauna": [
       {
@@ -79,7 +79,7 @@ let city = {
   section: "city",
   "city name": "",
   subsections: {
-    "city basics": [
+    basics: [
       {
         question: "What is the name of your city?",
         placeholder: "city name",
@@ -90,11 +90,33 @@ let city = {
   }
 }
 
+let worldSects = [];
+
+for (let key in world.subsections) {
+
+  worldSects.push([key, world.subsections[key].length-1])
+}
+
+let regionSects = [];
+
+for (let key in region.subsections) {
+  regionSects.push([key, region.subsections[key].length-1])
+}
+
+let citySects = [];
+
+for (let key in city.subsections) {
+  citySects.push([key, city.subsections[key].length-1])
+}
+
 
 module.exports = {
   world,
   region,
-  city
+  city,
+  worldSects,
+  regionSects,
+  citySects,
 }
 
 // "0": {
