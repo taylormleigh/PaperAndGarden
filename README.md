@@ -1,4 +1,4 @@
-# + Paper & Garden
+# Paper & Garden
 ## *A World Building Resource for Storytellers*
 
 ![logo](public/builderlogo.png)
@@ -13,9 +13,9 @@ Paper & Garden is a full-stack web application that takes in input about a ficti
 
 ---
 
-+ *Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.*
+*Whether you're meticulously designing a story or simply planting its seed to watch it grow, your locations can be as rich as characters. Each area of your world has a unique personality that interacts with your characters, informs your plot, and illustrates your themes.*
 
-+ *We can help you discover the world your story deserves.*
+*We can help you discover the world your story deserves.*
 
 ---
 
@@ -26,10 +26,10 @@ Paper & Garden is a full-stack web application that takes in input about a ficti
 
 ### Tech stack
 * Language: JavaScript
-* Client: React, CSS, Next.js
+* Frontend: React, CSS, Next.js, axios
 * Server: Serverless
 * Database: MongoDB
-* Testing: Cypress
+* Testing: Cypress.io
 
 ### Challenges
 * Designing a simple, aesthetically pleasing, easily accessible UI
