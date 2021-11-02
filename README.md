@@ -57,7 +57,8 @@ Paper & Garden is a full-stack web application that takes in input about a ficti
 * I implement Agile Practices to organize and execute this project.
 
 ### Future Plans
-* Full form functionality with increased usability (accordion drawer designs, etc)
+* Full form functionality with increased usability
+* "My Worlds" view incorporates accordion drawer design
 * "Sign in with Google" authentication
 * Stress-Testing and prepping for increased traffic as features evolve
 * Sharpening the usability of the interface
