@@ -314,15 +314,19 @@ body {
 }
 
 .questionComponent {
+  /* display: flex; */
+  justify-content: center;
   height: 260px;
   padding: 20px;
 }
 
 .question {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .questionTextArea {
+  min-height: 120px;
+  min-width: 20vw;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -343,15 +347,26 @@ body {
 .arrowNavButton {
   display: flex;
   justify-content: center;
+  margin-top: 35px;
+}
+
+#beginArrow {
+  margin: 15px;
+  width: 0; 
+  height: 0; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  
+  border-left: 40px solid #F48B7C;
 }
 
 #backArrow {
   width: 0; 
   height: 0; 
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent; 
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent; 
   
-  border-right:50px solid #BCC4B7; 
+  border-right:40px solid #BCC4B7; 
 
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -360,10 +375,10 @@ body {
 #forwardArrow {
   width: 0; 
   height: 0; 
-  border-top: 30px solid transparent;
-  border-bottom: 30px solid transparent;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
   
-  border-left: 50px solid #BCC4B7;
+  border-left: 40px solid #BCC4B7;
 }
 
 
@@ -477,13 +492,10 @@ a:hover {
 
 /* INPUT */
 input, textarea {
-  height: 100px;
-  width: 465px;
   font-family: Caladea;
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 30px;
-  width: 300px;
   background-color: #E3EEE7;
   border-radius: 3px;
   border: none;
