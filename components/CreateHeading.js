@@ -7,7 +7,7 @@ const CreateHeading = ({titleName, section, subsection}) => {
     return (
       <div className="sectionHeading">
         <h3>{section}: {titleName}
-        <br/><small>{subsection}</small>
+        <br/><small>{subsection[0]}</small>
         </h3>
       </div>
     );
