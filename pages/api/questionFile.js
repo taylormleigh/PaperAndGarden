@@ -4,7 +4,7 @@ let world = {
   subsections : {
     "world basics": [
       {
-        question: "Name your world",
+        question: "Name your world \n(note: you can NOT change the name of your world later)",
         placeholder: "world name",
         type: "textarea",
         answer: ""
@@ -23,17 +23,17 @@ let world = {
       },
       
     ],
-    regions: [
+  },
+  regions: [
       
-    ],
-  }
+  ],
 }
 
 let region = {
   section: "region",
   "region name": "",
   subsections : {
-    geography: [
+    "region basics": [
       {
         question: "Name your Region",
         placeholder: "region name",
@@ -46,6 +46,8 @@ let region = {
         type: "textarea",
         answer: ""
       },
+    ],
+    geography: [
       // {
       //   question: "What type of habitat is it?",
       //   "placeholder": ["desert", "tundra", "grassland", "forest", "rainforest", "wetland", "aquatic"],
@@ -67,17 +69,17 @@ let region = {
         answer: ""
       },
     ],
-    cities: [
+  },
+  cities: [
 
-    ]
-  }
+  ]
 }
 
 let city = {
   section: "city",
   "city name": "",
   subsections: {
-    basics: [
+    "city basics": [
       {
         question: "What is the name of your city?",
         placeholder: "city name",
