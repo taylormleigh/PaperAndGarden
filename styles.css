@@ -29,6 +29,7 @@ body {
   background: url(public/bodyDiv.png);
   background-size: cover; 
   background-repeat: no-repeat;
+  background-position: right;
   overflow-y: auto;
   overflow-x: hidden;
   
