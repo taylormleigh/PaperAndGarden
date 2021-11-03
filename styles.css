@@ -692,6 +692,12 @@ input, textarea {
 }
 /* iPad */
 @media only screen and (max-width: 770px) {
+  .logo{
+    content: url(public/builderlogo.png);
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
   #footer {
     /* min-width: 40vw; */
     justify-content: flex-end;
@@ -717,6 +723,12 @@ input, textarea {
 
 /* Goes Full Width */
 @media only screen and (max-width: 735px) {
+  .logo{
+    content: url(public/builderlogo.png);
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
   .container {
     width: 100%;
   }
