@@ -1,4 +1,4 @@
-import ArrowNavButton from './ArrowNavButton';
+import ArrowNavButton from './ArrowNavButton.js';
 
 const QuestionGenerator = (
   {section, //world, region, or city section

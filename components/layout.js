@@ -1,7 +1,7 @@
 import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
-import Navigation from "./Navigation"
+import Header from "./Header.js"
+import Footer from "./Footer.js"
+import Navigation from "./Navigation.js"
 
 const Layout = ({children}) => {
 

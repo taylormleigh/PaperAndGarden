@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from "../components/Layout.js";
 // import TabsNav from '../components/TabsNav.js';
-// import World from '../components/world';
+// import World from '../components/World.js';
 
 class MyWorlds extends React.Component{
 
