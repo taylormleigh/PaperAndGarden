@@ -260,7 +260,7 @@ class CreateWorld extends React.Component {
           handleNext={this.handleNext}
         />
         <QuoteGenerator />
-
+        
         <Progress 
           index={this.state.qIndex}
           total={this.state.lastIndex}

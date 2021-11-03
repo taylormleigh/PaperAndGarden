@@ -6,6 +6,7 @@ const Progress = ({index, total, subsection}) => {
           <div className="greenContainerText progressText">
             {subsection[0]} : {index+1} / {total+1}
           </div>
+          <br/>
           <div className="progressBar row">
             <div className="progressMeter box p20">
             </div>

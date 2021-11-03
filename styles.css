@@ -102,8 +102,6 @@ body {
 /* NAVIGATION */
 
 #navigation {
-  /* max-width: 330px; */
-  /* width: 8vw; */
   max-height: 600px;
 }
 
@@ -691,6 +689,92 @@ input, textarea {
     border-right:4.2vw solid #BCC4B7; 
   }
 }
+/* Height */
+@media only screen and (max-height: 800px) {
+  .bodyDiv {
+    height: 75vh;
+    overflow-y: auto;
+  }
+  #navigation {
+    height: 75vh;
+  }
+  .navButton {
+    height: 31.6%;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  #beginArrow {
+    margin-top: 0px;
+  }
+  .logo {
+    height: 80px;
+  }
+  .bodyText {
+    font-size: 0.7rem;
+  }
+  .greenContainerText {
+    font-size: 0.7rem;
+  }
+  #worldViewContainer {
+    width: 99%;
+    height: 58vh;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .progressBar.row{
+    display: none;
+  }
+  .progressText {
+    position: relative;
+    margin: 5px;
+  }
+  .greenContainer.progress {
+    height: 5vh;
+  }
+  .sectionHeading {
+    height: 70px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .sectionHeading {
+    height: 50px;
+  }
+  #footer {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 590px) {
+  .bodyDiv {
+    height: 74vh;
+    overflow:hidden;
+  }
+  #navigation {
+    height: 74vh;
+  }
+  .navButton {
+    height: 31.2%;
+  }
+  .navButtonText {
+    display: none;
+  }
+  .quoteComponent {
+    display: none;
+  }
+}
+
+@media only screen and (max-height: 530px) {
+   .progress {
+    display: none;
+  }
+}
+
 /* iPad */
 @media only screen and (max-width: 770px) {
   .logo{
