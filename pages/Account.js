@@ -3,7 +3,7 @@ import Layout from '../components/Layout.js';
 
 const Account = () => {
   return (
-    <Layout>
+    <Layout pathname={"signIn"}>
         <div className="greenContainer">
           <div className="greenContainerText row">
             <div id="changeSettings" className="col-xs">

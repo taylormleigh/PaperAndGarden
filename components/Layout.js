@@ -3,7 +3,7 @@ import Header from "./Header.js"
 import Footer from "./Footer.js"
 import Navigation from "./Navigation.js"
 
-const Layout = ({children}) => {
+const Layout = ({children, pathname}) => {
 
   return (
     <div className="container">
@@ -17,7 +17,7 @@ const Layout = ({children}) => {
     <div className="row">
       <div className="col-xs">
         <div className="box">
-          <Navigation />
+          <Navigation pathname={pathname}/>
         </div>
       </div>
       <div className="col-xs">

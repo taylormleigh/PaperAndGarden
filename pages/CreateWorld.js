@@ -248,7 +248,7 @@ class CreateWorld extends React.Component {
   render() {
  
     return (
-      <Layout>
+      <Layout pathname={"create"}>
         <CreateHeading section={this.state.allSections[this.state.currentSection]} subsection={this.state.allSubsections[this.state.currentSubsection]} titleName={this.state.titleName} />
 
         <QuestionGenerator

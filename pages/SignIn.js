@@ -4,7 +4,7 @@ import Layout from '../components/Layout.js'
 
 const SignIn = () => {
   return (
-    <Layout>
+    <Layout pathname={"signIn"}>
       <div id="signInLogo" className="logo"></div>
         <div className="greenContainer">
           <div className="greenContainerText">Sign In with Google</div>

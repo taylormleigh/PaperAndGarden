@@ -6,7 +6,7 @@ import ArrowNavButton from '../components/ArrowNavButton.js';
 const Create = () => {
   
   return (
-    <Layout>
+    <Layout pathname={"create"}>
       <div className="bodyText">
         <h2>Create a New World</h2>
         These questions are designed to inspire you to develop a setting that exists more realistically within your own head and therefore in your writing.

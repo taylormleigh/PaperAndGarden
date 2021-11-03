@@ -1,15 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Navigation = ({status = "selected"}) => {
+
+
+
+const Navigation = ({status = "loggedOut", pathname = "/"}) => {
 
   return (
     <div id="navigation">
       
       <Link href={"/SignIn"}>
-        <div id="authButton" className={`navButton ${status}`}>
+        <div id="authButton" className={`navButton ${pathname}`}>
           <div id="authButton" className="insideNavButton">
-            <h6 className="loggedOut navButtonHeader">Sign in / sign up</h6>
+            <h6 className={`${status} navButtonHeader`}>Sign in / sign up</h6>
             <h5 className="navButtonText">ready to create your own world?</h5>
           </div>
         </div>
@@ -17,7 +20,7 @@ const Navigation = ({status = "selected"}) => {
 
 
       <Link href={"/MyWorlds"}>
-        <div id="viewWorldsButton" className={`navButton ${status}`}>
+        <div id="viewWorldsButton" className={`navButton ${pathname}`}>
           <div id="authButton" className="insideNavButton">
             <h6 className="navButtonHeader">My Worlds</h6>
             <h5 className="navButtonText">easily view and edit the worlds you have created</h5>
@@ -27,7 +30,7 @@ const Navigation = ({status = "selected"}) => {
 
 
       <Link href={"/Create"}>
-        <div id="newWorldButton" className={`navButton ${status}`}>
+        <div id="newWorldButton" className={`navButton ${pathname}`}>
           <div id="authButton" className="insideNavButton">
             <h6 className="navButtonHeader">Create New</h6>
             <h5 className="navButtonText">start filling out information for your new world - everything from the flora & fauna of a region to local social customs</h5>

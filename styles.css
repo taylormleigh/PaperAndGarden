@@ -123,15 +123,10 @@ body {
   text-align: center;
 }
 
-/* for dev only */
-.selected{
+#authButton.signIn {
   border: 1px solid #F48B7C;
   box-sizing: border-box;
   border-radius: 3px;
-}
-
-#authButton {
-
 }
 
 #authButton.auth {
@@ -140,8 +135,10 @@ body {
   border-radius: 3px;
 }
 
-#viewWorldsButton {
-
+#viewWorldsButton.myWorlds {
+  border: 1px solid #F48B7C;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 #viewWorldsButton.viewWorlds {
@@ -150,8 +147,10 @@ body {
   border-radius: 3px;
 }
 
-#newWorldButton {
-
+#newWorldButton.create {
+  border: 1px solid #F48B7C;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 #newWorldButton.newWorld {
