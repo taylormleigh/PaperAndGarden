@@ -8,6 +8,7 @@ const Progress = ({index, total, subsection}) => {
           </div>
           <div className="progressBar row">
             <div className="progressMeter box p20">
+              {/* calculate progress and assign to className */}
             </div>
           </div>
         </div>
