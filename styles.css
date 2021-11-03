@@ -303,10 +303,6 @@ body {
   width: 25vw;
 }
 
-#beginArrow {
-
-}
-
 /* Question pages */
 .sectionHeading {
   height: 100px;
@@ -422,10 +418,10 @@ body {
 #backArrow {
   width: 0; 
   height: 0; 
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; 
+  border-top: 1.5vw solid transparent;
+  border-bottom: 1.5vw solid transparent; 
   
-  border-right:40px solid #BCC4B7; 
+  border-right:2.2vw solid #BCC4B7; 
 
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 3px;
@@ -434,10 +430,10 @@ body {
 #forwardArrow {
   width: 0; 
   height: 0; 
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
+  border-top: 1.5vw solid transparent;
+  border-bottom: 1.5vw solid transparent;
   
-  border-left: 40px solid #BCC4B7;
+  border-left: 2.2vw solid #BCC4B7;
 }
 
 
@@ -680,6 +676,18 @@ input, textarea {
   .bodyDiv {
     width: 65vw;
   }
+  #forwardArrow {
+    border-top: 3vw solid transparent;
+    border-bottom: 3vw solid transparent;
+    
+    border-left: 4.2vw solid #BCC4B7;
+  }
+  #backArrow {
+    border-top: 3vw solid transparent;
+    border-bottom: 3vw solid transparent; 
+    
+    border-right:4.2vw solid #BCC4B7; 
+  }
 }
 /* iPad */
 @media only screen and (max-width: 770px) {
@@ -808,12 +816,50 @@ input, textarea {
     box-sizing: border-box;
     border-radius: 3px;
   }
+  .questionComponent {
+    margin-bottom: 100px;
+  }
+  .questionTextArea {
+    min-width: 60vw;
+    height: 30vw;
+    margin-top: 20px;
+  }
+  .arrowNavButton {
+    justify-content: center;
+    margin-top: 70px;
+  }
+  .quoteComponent {
+    display: none;
+  }
+  #backArrow {
+    border-top: 6vw solid transparent;
+    border-bottom: 6vw solid transparent; 
+    
+    border-right:7.2vw solid #BCC4B7; 
+  }
+  #forwardArrow {
+    border-top: 6vw solid transparent;
+    border-bottom: 6vw solid transparent;
+    
+    border-left: 7.2vw solid #BCC4B7;
+  }
+  #beginArrow {
+    border-top: 5vw solid transparent;
+    border-bottom: 5vw solid transparent;
+    
+    border-left: 9vw solid #F48B7C;
+    margin-bottom: 80px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
   #footer {
     margin: 0px;
     padding: 0px;
+  }
+  .bodyDiv {
+    min-height: 700px;
+    overflow: hidden;
   }
   #buttonNavigation {
     flex-flow: column nowrap;
@@ -836,6 +882,39 @@ input, textarea {
     inline-size: max-content;
     margin-top: 7px;
     margin-left: 40px;
+  }
+  #backArrow {
+    display: none;
+  }
+  .question {
+    white-space: pre-wrap;
+    display: flex;
+    width: 80vw;
+  }
+  .questionTextArea {
+    min-width: 80vw;
+    min-height: 200px;
+    display: flex;
+    margin: -10px;
+  }
+  .arrowNavButton {
+    display: flex;
+  }
+  #forwardArrow {
+    border-top: 8vw solid transparent;
+    border-bottom: 8vw solid transparent;
+    border-left: 12vw solid #F48B7C;
+  }
+  .progressComponent {
+    display: none;
+  }
+  .greenContainer {
+    display: none;
+  }
+  .sectionHeading {
+    height: 100px;
+    /* padding: 10px; */
+    margin-top: -150px;
   }
 }
 
