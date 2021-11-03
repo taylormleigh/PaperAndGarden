@@ -15,7 +15,7 @@ const Create = () => {
 
         <p/>Let your mind wander - if the question sparks an idea for a scene, just start typing. You can skip any prompt and keep moving forward - it’s easy to edit your world later. 
 
-        <p/>Click the right arrow to begin.
+        <p/>Click the arrow to begin.
         <br/><h5>(Your progress will be saved automatically)</h5>
       </div>
       <ArrowNavButton direction={"/CreateWorld"}/>
