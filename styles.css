@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  width: 50vw;
+  width: 57vw;
 }
 
 
@@ -18,11 +18,11 @@ body {
 /* CONTENT */
 
 .bodyDiv {
-  width: 35vw;
-  height: 551px;
+  width: 40vw;
+  height: 600px;
 
   font-family: Caladea;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
   color: #225B4F;
 
@@ -54,7 +54,7 @@ body {
 
   display: flex;
   overflow-x: wrap;
-  min-width: 35vw;
+  min-width: 40vw;
 }
 
 .greenContainerText {
@@ -62,7 +62,7 @@ body {
   font-family: Caladea;
   font-style: italic;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 130%;
 
   display: inline-block;
@@ -92,7 +92,7 @@ body {
   text-align: end;
   font-weight: 300;
   font-size: 50px;
-  margin-right: 5vw;
+  margin-right: 7.134vw;
   text-transform: uppercase;
 }
 
@@ -101,13 +101,14 @@ body {
 /* NAVIGATION */
 
 #navigation {
-  max-width: 300px;
-  max-height: 551px;
+  /* max-width: 330px; */
+  /* width: 8vw; */
+  max-height: 600px;
 }
 
 .navButton {
-  max-width: 271px;
-  height: 174px;
+  width: 15.5vw;
+  height: 190px;
   border-radius: 3px;
   margin-bottom: 15px;
 
@@ -167,7 +168,7 @@ body {
 
 #footer {
   height: 70px;
-  min-width: 35vw;
+  min-width: 40vw;
   padding: 15px;
 
   display: flex;
@@ -177,9 +178,9 @@ body {
 #buttonNavigation {
   display: flex;
   flex-flow: row nowrap;
-  width: 12vw;
+  width: 14vw;
 
-  margin-left: 12vw;
+  margin-left: 17.5vw;
 }
 
 .footerButtonContainer {
@@ -583,19 +584,19 @@ input, textarea {
 /* RESPONSIVE CSS */
 
 /*  scale text */
-@media only screen and (max-width: 1540px) {
+@media only screen and (max-width: 1470px) {
   .container {
-    width: 57vw;
+    width: 60vw;
   }
 	.bodyDiv {
     font-size: 0.9rem;
-    min-width: 41vw;
+    min-width: 42vw;
   }
   .greenContainerText {
     font-size: 0.7rem;
   }
   .greenContainer {
-    min-width: 41vw;
+    min-width: 42vw;
   }
   h2 {
     font-size: 1.1rem;
@@ -613,7 +614,7 @@ input, textarea {
     font-size: 0.8rem;
   }
   .navButton {
-    min-width: 150px;
+    min-width: 16vw;
   }
   #footer {
     width: 100%;
@@ -908,7 +909,7 @@ input, textarea {
   .progressComponent {
     display: none;
   }
-  .greenContainer {
+  .greenContainer.progress {
     display: none;
   }
   .sectionHeading {
