@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from "../components/Layout.js";
 // import TabsNav from '../components/TabsNav.js';
 // import World from '../components/world';
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import axios from 'axios'; //pull info from saved world
+import Layout from "../components/Layout.js";
 
 // questions & subsection keys
 import { world, city, region } from './api/questionFile.js';

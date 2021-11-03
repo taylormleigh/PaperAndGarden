@@ -1,6 +1,6 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import ArrowNavButton from '../components/ArrowNavButton';
+import Layout from "../components/Layout.js";
+import ArrowNavButton from '../components/ArrowNavButton.js';
 
 
 const Create = () => {
