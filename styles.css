@@ -344,8 +344,63 @@ body {
 }
 
 .progressComponent {
+  display: flex;
   color: #FEFDFE;
   height: 70px;
+  width: 20vw;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 10px; */
+}
+
+.progressText {
+  height: 20px;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.progressBar {
+  position: absolute;
+  display: flex;
+  align-self: center;
+
+  min-width: 34%;
+  height: 15px;
+  margin-top: 20px;
+
+  border: 1px solid #FEFDFE;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.progressMeter {
+  min-width: 0%;
+  height: 13px;
+  background: #81CAA2;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.progressMeter.p20 {
+  min-width: 20%;
+}
+
+.progressMeter.p40 {
+  min-width: 40%;
+}
+
+.progressMeter.p60 {
+  min-width: 60%;
+}
+
+.progressMeter.p80 {
+  min-width: 80%;
+}
+
+.progressMeter.p100 {
+  min-width: 100%;
 }
 
 .arrowNavButton {
