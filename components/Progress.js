@@ -1,7 +1,7 @@
 const Progress = ({index, total, subsection}) => {
   if (subsection !== undefined) {
     return (
-      <div className="greenContainer">
+      <div className="greenContainer progress">
         <div className="progressComponent row">
           <div className="greenContainerText progressText">
             {subsection[0]} : {index+1} / {total+1}
@@ -15,7 +15,7 @@ const Progress = ({index, total, subsection}) => {
     )
   } else {
     return (
-      <div className="greenContainer">
+      <div className="greenContainer progress">
         <div className="progressComponent">
           <div className="greenContainerText">
             loading...
