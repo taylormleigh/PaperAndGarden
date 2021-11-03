@@ -680,6 +680,8 @@ input, textarea {
     border-right:4.2vw solid #BCC4B7; 
   }
 }
+
+
 /* Height */
 @media only screen and (max-height: 800px) {
   .bodyDiv {
@@ -695,15 +697,12 @@ input, textarea {
   #beginArrow {
     margin-top: 0px;
   }
-  .bodyText {
-    font-size: 0.9rem;
-  }
-  .greenContainerText {
-    font-size: 0.7rem;
-  }
   #worldViewContainer {
     width: 99%;
     height: 58vh;
+  }
+  .questionComponent {
+    margin: -20px;
   }
 }
 
@@ -721,27 +720,8 @@ input, textarea {
   .sectionHeading {
     height: 70px;
   }
-}
-
-@media only screen and (max-height: 590px) {
-  .bodyDiv {
-    height: 74vh;
-    overflow:hidden;
-  }
-  .navButton {
-    height: 31.2%;
-  }
-  .navButtonText {
-    display: none;
-  }
-  .quoteComponent {
-    display: none;
-  }
-}
-
-@media only screen and (max-height: 530px) {
-   .progress {
-    display: none;
+  .questionTextArea {
+    max-height: 40vh;
   }
 }
 
@@ -773,12 +753,15 @@ input, textarea {
 }
 
 /* Goes Full Width */
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 735px), screen and (max-height: 600px) {
   .logo{
     content: url(public/builderlogo.png);
     width: 200px;
     margin: 0 auto;
     margin-bottom: 10px;
+  }
+  .navButtonText {
+    display: none;
   }
   .container {
     width: 100%;
