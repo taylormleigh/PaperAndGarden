@@ -137,13 +137,13 @@ class CreateWorld extends React.Component {
     //update user input title with every new section
     // if (qIndex === 0 && subsection === "basics"){
       //if user has not input a title, prevent them from moving forward
-      if (answer !== "") {
+      // if (answer !== "") {
         this.getSectionTitle();
         
       // } else {
       //   return;
       // }
-    }
+    // }
 
     //object with user answers
     let newUserObj = this.state.userObj;
