@@ -8,8 +8,8 @@ import { worldSects, citySects, regionSects } from './api/questionFile.js';
 
 import CreateHeading from '../components/CreateHeading.js';
 import QuestionGenerator from '../components/QuestionGenerator';
-// import QuoteGenerator from '../components/QuoteGenerator';
-// import Progress from '../components/Progress';
+import QuoteGenerator from '../components/QuoteGenerator';
+import Progress from '../components/Progress';
 
 class CreateWorld extends React.Component {
 
@@ -20,7 +20,7 @@ class CreateWorld extends React.Component {
         world: {},
         region: {},
         city: {}
-      },
+      },//on submit, city will be pushed into region into world
 
       titleName: "",
       currentSection: 0,
@@ -120,6 +120,9 @@ class CreateWorld extends React.Component {
 
   //submits world object to database
   handleSubmit = () => {
+    //usr object pushes city into cities array in region
+    //pushes region into regions array in world
+
     //axios update request sends entire world object to database
   }
 
@@ -256,17 +259,14 @@ class CreateWorld extends React.Component {
           handleAnswers={this.handleAnswers}
           handleNext={this.handleNext}
         />
-        <span className="quoteComponent">
-          quote component
-        </span>
-        <div className="greenContainer">
-          <div className="progressComponent">
-            <div className="greenContainerText">
-              progress component 
-              <br/>input index of question
-            </div>
-          </div>
-        </div>
+        <QuoteGenerator />
+
+        <Progress 
+          index={this.state.qIndex}
+          total={this.state.lastIndex}
+          subsection={this.state.allSubsections[this.state.currentSubsection]}
+        />
+
       </Layout>
     );
   }
