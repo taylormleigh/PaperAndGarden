@@ -15,11 +15,12 @@ const QuoteGenerator = () => {
     `“A writer is a world trapped in a person.”\n― Victor Hugo`
   ]
 
+  
   let random = Math.ceil(Math.random() * quotes.length-1);
 
   return (
     <span className="quoteComponent">
-      {quotes[random]}
+      {quotes[11]}
     </span>
   )
 }
