@@ -183,15 +183,19 @@ class CreateWorld extends React.Component {
           }, () => {
             this.getQuestions();
             this.setState({
-              qIndex: this.state.lastIndex,
-              currentSubsection: this.state.allSubsections.length-1
+              // currentSubsection: this.state.allSubsections.length-1,
+              qIndex: this.state.lastIndex
             })
           })
         // We can move back one subsection
         } else {
           this.setState({
             currentSubsection: subsection-=1,
-            qIndex: this.state.allSubsections[subsection][1]
+          }, () => {
+            this.getQuestions();
+            this.setState({
+              qIndex: this.state.lastIndex
+            })
           })
         }
       } else {

@@ -9,7 +9,7 @@ const QuestionGenerator = (
     handleNext} //handles arrow navigation
   ) => {
     
-  if (subsection !== undefined) {
+  if (subsection !== undefined && section.subsections !== undefined) {
     let q = section.subsections[subsection[0]][qIndex];
     let question = q.question;
     let placeholder = q.placeholder;
