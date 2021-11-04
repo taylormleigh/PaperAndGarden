@@ -85,23 +85,11 @@ class CreateWorld extends React.Component {
 
   //sets section title names
   getSectionTitle = () => {
-    let worldName = this.state.userObj.world.subsections["basics"][0].answer;
-    let regionName = this.state.userObj.region.subsections["basics"][0].answer;
-    let cityName = this.state.userObj.city.subsections["basics"][0].answer;
+    let title = this.state.answer;
 
-    if (cityName) {
       this.setState({
-        titleName: worldName
+        titleName: title
       })
-    } else if (regionName) {
-      this.setState({
-        titleName: worldName
-      })
-    } else if (worldName) {
-      this.setState({
-        titleName: worldName
-      })
-    }
 
     return;
   }
@@ -135,7 +123,7 @@ class CreateWorld extends React.Component {
     let qIndex = this.state.qIndex;
 
     //update user input title with every new section
-    // if (qIndex === 0 && subsection === "basics"){
+    if (qIndex === 0 && subsection === "basics" && !this.state.titleName){
       //if user has not input a title, prevent them from moving forward
       // if (answer !== "") {
         this.getSectionTitle();
@@ -143,7 +131,7 @@ class CreateWorld extends React.Component {
       // } else {
       //   return;
       // }
-    // }
+    }
 
     //object with user answers
     let newUserObj = this.state.userObj;
