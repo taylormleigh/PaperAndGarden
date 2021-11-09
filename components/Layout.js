@@ -11,7 +11,9 @@ const Layout = ({children, pathname}) => {
 
     <div className="row">
       <div className="col-xs">
-        <div className="box"><Header /></div>
+        <div className="box">
+          <Header />
+        </div>
       </div>
     </div>
 
@@ -22,28 +24,27 @@ const Layout = ({children, pathname}) => {
         </div>
       </div>
       <div className="col-xs">
-        <div className="box">
-          <div className="bodyDiv">
-            <motion.div
-            initial={{ opacity: 0 }}
-            exit={{ opacity:0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}>
-              <main>{children}</main>
-            </motion.div>
-          </div>
+        <div className="box bodyDiv">
+          <motion.div
+          initial={{ opacity: 0 }}
+          exit={{ opacity:0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}>
+            <main>{children}</main>
+          </motion.div>
         </div>
       </div>
     </div>
 
     <div className="row">
       <div className="col-xs">
-        <div className="box"><Footer /></div>
+          <Footer />
       </div>
     </div>
 
     </div>
   )
+
 }
 
 export default Layout;
