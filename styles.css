@@ -42,7 +42,8 @@ body {
 }
 
 .logo{
-  content: url(public/logo.png);
+  /* content: url(public/logo.png); */
+  height: 90px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
