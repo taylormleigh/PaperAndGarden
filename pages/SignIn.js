@@ -5,7 +5,7 @@ import Layout from '../components/Layout.js'
 const SignIn = () => {
   return (
     <Layout pathname={"signIn"}>
-      <div id="signInLogo" className="logo"></div>
+      <img id="signInLogo" className="logo" src="builderlogo.png"/>
         <div className="greenContainer">
           <div className="greenContainerText">Sign In with Google</div>
         </div>
