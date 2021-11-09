@@ -32,6 +32,7 @@ let world = {
 let region = {
   section: "region",
   "region name": "",
+  "world name": "",
   subsections : {
     basics: [
       {
@@ -79,6 +80,7 @@ let region = {
 let city = {
   section: "city",
   "city name": "",
+  "region name": "",
   subsections: {
     basics: [
       {
