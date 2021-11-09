@@ -7,7 +7,7 @@ const Home = () => {
     <Layout pathname={"home"}>
       <>
 
-        <div id="homeLogo" className="logo"></div>
+        <img id="homeLogo" className="logo" src="builderlogo.png"/>
         <div className="greenContainer">
           <div className="greenContainerText"><p /><i>“I think there are two types of writers, the architects and the gardeners. The architects plan everything ahead of time, like an architect building a house. They have the whole thing designed and blueprinted out before they even nail the first board up. The gardeners dig a hole, drop in a seed and water it. As the plant comes up and they water it, they don't know how many branches it's going to have, they find out as it grows."</i>
           <br />-George R.R. Martin</div>
